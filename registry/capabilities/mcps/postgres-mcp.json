@@ -1,0 +1,21 @@
+{
+  "id": "dbtools-org/postgres-mcp",
+  "name": "PostgreSQL MCP Server",
+  "description": "Provides PostgreSQL database access for queries, schema inspection, and data operations",
+  "version": "1.0.0",
+  "author": "dbtools-org",
+  "tags": ["database", "postgres", "sql", "data"],
+  "visibility": "public",
+  "adapters": ["claude-code", "cursor", "windsurf"],
+  "mcp": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-postgres"],
+    "env": [
+      {
+        "key": "POSTGRES_CONNECTION_STRING",
+        "label": "PostgreSQL Connection String",
+        "required": true
+      }
+    ]
+  }
+}

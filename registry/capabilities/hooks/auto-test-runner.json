@@ -1,0 +1,14 @@
+{
+  "id": "testautomation/auto-test-runner",
+  "name": "Auto Test Runner",
+  "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
+  "version": "1.0.0",
+  "author": "testautomation",
+  "tags": ["testing", "automation", "ci", "development"],
+  "visibility": "public",
+  "adapters": ["claude-code", "cursor", "windsurf"],
+  "hook": {
+    "trigger": "file_save",
+    "command": "npm test -- --findRelatedTests $FILE_PATH --passWithNoTests"
+  }
+}
