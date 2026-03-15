@@ -1,63 +1,74 @@
-# AgentDock Community Registry Examples
+# AgentDock Community Registry
 
-This folder contains example capabilities and agents that demonstrate how to create content for AgentDock registries. These are reference examples and do not affect the app build.
+Community-contributed capabilities, skills, and agents for [AgentDock](https://github.com/abhijeetsingh/agentdock).
 
 ## Structure
 
 ```
 community-registry/
-└── registry/
-    ├── agents/                    # AI agents for specific tasks
-    │   ├── fullstack-developer.md
-    │   ├── code-reviewer.md
-    │   └── api-designer.md
-    └── capabilities/              # Reusable capabilities organized by type
-        ├── hooks/                 # File change triggers
-        │   └── auto-test-runner.json
-        ├── mcps/                  # Model Context Protocol servers
-        │   ├── github-mcp.json
-        │   └── postgres-mcp.json
-        ├── plugins/               # IDE plugins (empty)
-        ├── rules/                 # Coding rules (empty)
-        └── skills/                # Development skills
-            └── react-component-generator.json
+├── skills/                          # Skills (agentskills.io spec)
+│   ├── react-component-generator/
+│   │   ├── SKILL.md                 # Entry point with frontmatter
+│   │   └── references/              # Supporting files
+│   │       └── patterns.md
+│   ├── api-endpoint-scaffolder/
+│   │   └── SKILL.md
+│   └── git-commit-reviewer/
+│       └── SKILL.md
+├── registry/
+│   ├── capabilities/                # Other capabilities (JSON format)
+│   │   ├── mcps/                    # MCP server definitions
+│   │   │   ├── github-mcp.json
+│   │   │   └── postgres-mcp.json
+│   │   ├── rules/                   # Coding rules
+│   │   │   └── general-code-review.json
+│   │   └── hooks/                   # Event-triggered automation
+│   │       └── auto-test-runner.json
+│   └── agents/                      # Agent definitions (.md)
+│       ├── code-reviewer.md
+│       ├── api-designer.md
+│       └── fullstack-developer.md
+├── CONTRIBUTING.md
+└── README.md
 ```
 
-## Capabilities
+## Skills
 
-### MCP Servers
-- **GitHub MCP**: Repository access, issues, PRs, and code search
-- **PostgreSQL MCP**: Database queries and schema inspection
+Skills follow the [agentskills.io](https://agentskills.io/specification) specification. Each skill is a directory with a `SKILL.md` entry point.
 
-### Skills
-- **React Component Generator**: TypeScript + Tailwind CSS components
+| Skill | Description |
+|-------|-------------|
+| [react-component-generator](skills/react-component-generator/) | Generates React components with TypeScript, Tailwind, accessibility, and tests |
+| [api-endpoint-scaffolder](skills/api-endpoint-scaffolder/) | Scaffolds REST API endpoints with validation, error handling, and tests |
+| [git-commit-reviewer](skills/git-commit-reviewer/) | Reviews staged changes for bugs, security issues, and code quality |
 
-### Hooks
-- **Auto Test Runner**: Automatically runs tests on file changes
+## MCP Servers
+
+| Name | Description |
+|------|-------------|
+| [github-mcp](registry/capabilities/mcps/github-mcp.json) | GitHub repository access, issues, PRs, and code search |
+| [postgres-mcp](registry/capabilities/mcps/postgres-mcp.json) | PostgreSQL database queries and schema inspection |
+
+## Rules
+
+| Name | Description |
+|------|-------------|
+| [general-code-review](registry/capabilities/rules/general-code-review.json) | Lightweight checklist for consistent code reviews |
+
+## Hooks
+
+| Name | Description |
+|------|-------------|
+| [auto-test-runner](registry/capabilities/hooks/auto-test-runner.json) | Runs relevant tests automatically when files are modified |
 
 ## Agents
 
-### Development Agents
-- **Full-Stack Developer**: End-to-end web development
-- **Code Reviewer**: Quality, security, and best practices review
-- **API Designer**: RESTful and GraphQL API architecture
+| Name | Description |
+|------|-------------|
+| [code-reviewer](registry/agents/code-reviewer.md) | Reviews code for quality, security, and best practices |
+| [api-designer](registry/agents/api-designer.md) | Designs RESTful and GraphQL APIs |
+| [fullstack-developer](registry/agents/fullstack-developer.md) | End-to-end web development with React, Node.js, and databases |
 
-## Adding New Content
+## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to add new capabilities and agents to this private registry.
-
-## Usage
-
-These are reference examples. To use them:
-
-1. Copy the JSON/MD files to your actual registry
-2. Or use them as templates to create your own capabilities and agents
-3. The actual registry sync happens through the configured GitHub repository in AgentDock settings
-
-## Purpose
-
-This folder serves as:
-- Reference examples for capability and agent formats
-- Templates for creating new content
-- Documentation of the expected structure
-- Local examples that don't affect the app build
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add your own skills, capabilities, and agents.
