@@ -1,0 +1,56 @@
+{
+  "updated_at": "2026-03-17T00:39:27.770644+00:00",
+  "categories": [
+    "git",
+    "linting",
+    "testing"
+  ],
+  "total": 3,
+  "entries": [
+    {
+      "name": "lint-on-save",
+      "display_name": "Lint on Save",
+      "description": "Automatically runs ESLint on saved files to catch issues immediately",
+      "category": "linting",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "linting",
+        "eslint",
+        "automation",
+        "code-quality"
+      ],
+      "path": "linting/lint-on-save.json"
+    },
+    {
+      "name": "auto-test-runner",
+      "display_name": "Auto Test Runner",
+      "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
+      "category": "testing",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "testing",
+        "automation",
+        "ci",
+        "development"
+      ],
+      "path": "testing/auto-test-runner.json"
+    },
+    {
+      "name": "pre-commit-check",
+      "display_name": "Pre-Commit Type Check",
+      "description": "Runs TypeScript type checking before each commit to catch type errors early",
+      "category": "git",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "git",
+        "typescript",
+        "type-checking",
+        "pre-commit"
+      ],
+      "path": "git/pre-commit-check.json"
+    }
+  ]
+}

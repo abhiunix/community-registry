@@ -1,0 +1,24 @@
+{
+  "name": "react-component-generator",
+  "display_name": "React Component Generator",
+  "description": "Generates production-ready React components with TypeScript, Tailwind CSS, accessibility, and test scaffolding",
+  "category": "development",
+  "author": "community",
+  "author_github": "anthropics",
+  "version": "1.0.0",
+  "tags": ["react", "typescript", "tailwind", "components", "testing"],
+  "compatible_adapters": ["claude-code", "cursor"],
+  "source": {
+    "repo": "anthropics/skills",
+    "path": "skills/react-component-generator",
+    "branch": "main",
+    "url": "https://github.com/anthropics/skills"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 2,
+  "license": "MIT"
+}

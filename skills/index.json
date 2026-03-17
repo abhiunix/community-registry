@@ -1,0 +1,56 @@
+{
+  "updated_at": "2026-03-17T00:39:27.762704+00:00",
+  "categories": [
+    "development"
+  ],
+  "total": 3,
+  "entries": [
+    {
+      "name": "api-endpoint-scaffolder",
+      "display_name": "API Endpoint Scaffolder",
+      "description": "Scaffolds REST API endpoints with route handler, validation, error handling, and tests. Detects framework automatically.",
+      "category": "development",
+      "author_github": "anthropics",
+      "stars": 0,
+      "tags": [
+        "api",
+        "rest",
+        "scaffolding",
+        "express",
+        "nextjs"
+      ],
+      "path": "development/api-endpoint-scaffolder"
+    },
+    {
+      "name": "react-component-generator",
+      "display_name": "React Component Generator",
+      "description": "Generates production-ready React components with TypeScript, Tailwind CSS, accessibility, and test scaffolding",
+      "category": "development",
+      "author_github": "anthropics",
+      "stars": 0,
+      "tags": [
+        "react",
+        "typescript",
+        "tailwind",
+        "components",
+        "testing"
+      ],
+      "path": "development/react-component-generator"
+    },
+    {
+      "name": "git-commit-reviewer",
+      "display_name": "Git Commit Reviewer",
+      "description": "Reviews staged git changes and provides feedback on code quality, potential bugs, and security issues before committing",
+      "category": "development",
+      "author_github": "anthropics",
+      "stars": 0,
+      "tags": [
+        "git",
+        "code-review",
+        "quality",
+        "security"
+      ],
+      "path": "development/git-commit-reviewer"
+    }
+  ]
+}

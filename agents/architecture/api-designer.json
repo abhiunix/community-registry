@@ -1,0 +1,22 @@
+{
+  "name": "api-designer",
+  "display_name": "API Designer",
+  "description": "Expert API architect designing RESTful and GraphQL APIs following industry best practices and standards",
+  "category": "architecture",
+  "author": "apicraft",
+  "author_github": "",
+  "version": "1.0.0",
+  "model": "sonnet",
+  "color": "green",
+  "memory": "project",
+  "tags": ["api", "rest", "graphql", "design", "architecture"],
+  "source": {
+    "repo": "",
+    "url": ""
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-17"
+  },
+  "license": "MIT"
+}

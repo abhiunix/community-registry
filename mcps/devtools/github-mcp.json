@@ -1,0 +1,30 @@
+{
+  "name": "github-mcp",
+  "display_name": "GitHub MCP Server",
+  "description": "Provides GitHub repository access, issues, PRs, and code search capabilities through the Model Context Protocol",
+  "category": "devtools",
+  "author": "devtools-contrib",
+  "author_github": "modelcontextprotocol",
+  "version": "1.0.0",
+  "tags": ["github", "vcs", "devtools", "code-search"],
+  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@modelcontextprotocol/server-github"],
+  "env": {
+    "GITHUB_PERSONAL_ACCESS_TOKEN": {
+      "type": "secret",
+      "label": "${GITHUB_PERSONAL_ACCESS_TOKEN}",
+      "required": true
+    }
+  },
+  "source": {
+    "repo": "modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/github"
+  },
+  "stats": {
+    "github_stars": 15200,
+    "updated_at": "2026-03-17"
+  },
+  "license": "MIT"
+}

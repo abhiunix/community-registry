@@ -1,0 +1,22 @@
+{
+  "name": "general-code-review",
+  "display_name": "General Code Review Checklist",
+  "description": "A lightweight checklist for consistent code reviews: readability, tests, and security",
+  "category": "code-quality",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": ["code-review", "quality", "checklist"],
+  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "scope": "project",
+  "content": "## General Code Review Checklist\n\n- Readability: naming, structure, and comments.\n- Tests: new behavior has tests; existing tests still pass.\n- Security: no sensitive data in logs or config; inputs validated.\n- Dependencies: only needed deps; no known vulnerable versions.",
+  "source": {
+    "repo": "",
+    "url": ""
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-17"
+  },
+  "license": "MIT"
+}

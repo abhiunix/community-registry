@@ -1,0 +1,30 @@
+{
+  "name": "postgres-mcp",
+  "display_name": "PostgreSQL MCP Server",
+  "description": "Provides PostgreSQL database access for queries, schema inspection, and data operations",
+  "category": "devtools",
+  "author": "dbtools-org",
+  "author_github": "modelcontextprotocol",
+  "version": "1.0.0",
+  "tags": ["database", "postgres", "sql", "data"],
+  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@modelcontextprotocol/server-postgres"],
+  "env": {
+    "POSTGRES_CONNECTION_STRING": {
+      "type": "secret",
+      "label": "${POSTGRES_CONNECTION_STRING}",
+      "required": true
+    }
+  },
+  "source": {
+    "repo": "modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres"
+  },
+  "stats": {
+    "github_stars": 15200,
+    "updated_at": "2026-03-17"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentdock.dev/schemas/metadata.schema.json",
+  "title": "AgentDock Registry Entry Metadata",
+  "description": "Schema for metadata files in the AgentDock community registry",
+  "type": "object",
+  "required": ["name", "display_name", "description", "category", "version", "tags", "license"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique kebab-case identifier"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Human-readable name"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Short description of the entry"
+    },
+    "category": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Category folder name"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author or organization name"
+    },
+    "author_github": {
+      "type": "string",
+      "description": "GitHub username or organization"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Searchable tags"
+    },
+    "compatible_adapters": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["claude-code", "cursor", "windsurf"]
+      },
+      "description": "List of compatible IDE adapters"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "repo": { "type": "string" },
+        "path": { "type": "string" },
+        "branch": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "description": "Source repository information"
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "github_stars": { "type": "integer", "minimum": 0 },
+        "updated_at": { "type": "string", "format": "date" }
+      },
+      "description": "Community statistics"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier"
+    },
+    "transport": {
+      "type": "string",
+      "enum": ["stdio", "sse", "http"],
+      "description": "MCP transport type (MCP servers only)"
+    },
+    "command": {
+      "type": "string",
+      "description": "Executable command (MCP servers and hooks)"
+    },
+    "args": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Command arguments (MCP servers only)"
+    },
+    "env": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "label": { "type": "string" },
+          "required": { "type": "boolean" }
+        }
+      },
+      "description": "Environment variables (MCP servers only)"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["project", "global"],
+      "description": "Rule scope (rules only)"
+    },
+    "content": {
+      "type": "string",
+      "description": "Inline content (rules only)"
+    },
+    "trigger": {
+      "type": "string",
+      "description": "Event trigger (hooks only)"
+    },
+    "model": {
+      "type": "string",
+      "enum": ["sonnet", "opus", "haiku"],
+      "description": "AI model (agents only)"
+    },
+    "color": {
+      "type": "string",
+      "description": "Display color (agents only)"
+    },
+    "memory": {
+      "type": "string",
+      "enum": ["none", "session", "project", "global"],
+      "description": "Memory scope (agents only)"
+    },
+    "has_scripts": {
+      "type": "boolean",
+      "description": "Whether the skill includes scripts (skills only)"
+    },
+    "file_count": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of files in the skill (skills only)"
+    }
+  }
+}

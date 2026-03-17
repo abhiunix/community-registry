@@ -1,0 +1,45 @@
+{
+  "updated_at": "2026-03-17T00:39:27.772210+00:00",
+  "skills": {
+    "total": 3,
+    "categories": [
+      "development"
+    ],
+    "top_stars": 0
+  },
+  "mcps": {
+    "total": 2,
+    "categories": [
+      "devtools"
+    ],
+    "top_stars": 15200
+  },
+  "rules": {
+    "total": 5,
+    "categories": [
+      "code-quality",
+      "performance",
+      "security",
+      "style"
+    ],
+    "top_stars": 0
+  },
+  "hooks": {
+    "total": 3,
+    "categories": [
+      "git",
+      "linting",
+      "testing"
+    ],
+    "top_stars": 0
+  },
+  "agents": {
+    "total": 3,
+    "categories": [
+      "architecture",
+      "code-review",
+      "development"
+    ],
+    "top_stars": 0
+  }
+}

@@ -1,37 +1,38 @@
-# Contributing to AgentDock Community Registry
+# Contributing to the AgentDock Community Registry
 
-## Adding a Skill
+Thank you for contributing. This guide explains how to add new entries to the registry.
 
-Skills follow the [agentskills.io](https://agentskills.io/specification) specification. Each skill is a directory under `skills/`.
+## General rules
 
-### Directory Structure
+- One entry per pull request.
+- All JSON files must be valid and use 2-space indentation.
+- Metadata must conform to `schemas/metadata.schema.json`.
+- Use kebab-case for file and folder names.
+- Include a clear, concise description (under 200 characters).
+- Tag entries with relevant keywords for discoverability.
 
-```
-skills/
-└── your-skill-name/
-    ├── SKILL.md              # Required — entry point
-    ├── scripts/              # Optional — helper scripts
-    ├── references/           # Optional — reference docs
-    └── assets/               # Optional — templates, data files
-```
+## Adding a skill
 
-### SKILL.md Format
+1. Pick or create a category folder under `skills/` (e.g., `skills/development/`).
+2. Create a folder named after your skill: `skills/<category>/<skill-name>/`.
+3. Add your `SKILL.md` file with YAML frontmatter (`name`, `description`, `license`, `allowed-tools`).
+4. Add a `metadata.json` file following the schema. Required fields: `name`, `display_name`, `description`, `category`, `version`, `tags`, `compatible_adapters`, `license`.
+5. If your skill has reference files, place them in a `references/` subfolder.
+6. Update `skills/index.json` to include your entry.
+
+### SKILL.md format
 
 ```markdown
 ---
 name: your-skill-name
-description: "What this skill does and when to use it. Be specific."
+description: "What this skill does and when to use it."
 license: MIT
 allowed-tools: Read Glob Grep Edit Write
 ---
 
 # Your Skill Name
 
-Instructions for the AI agent go here. Write clear, step-by-step
-guidance for what the agent should do when this skill is invoked.
-
-## When to Use
-Describe the trigger conditions.
+Instructions for the AI agent go here.
 
 ## Steps
 1. First, do this...
@@ -41,140 +42,132 @@ Describe the trigger conditions.
 - Constraints and guardrails
 ```
 
-### Frontmatter Fields
+## Adding an MCP server
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `name` | Yes | Lowercase, hyphens only, max 64 chars. Must match directory name. |
-| `description` | Yes | What the skill does AND when to use it. Max 1024 chars. |
-| `license` | No | License name (e.g., `MIT`, `Apache-2.0`). |
-| `allowed-tools` | No | Space-separated list of tools the skill can use. |
-
-### Naming Rules
-
-- Directory name must match the `name` field in SKILL.md
-- Use lowercase letters, numbers, and hyphens only (`a-z`, `0-9`, `-`)
-- No leading, trailing, or consecutive hyphens
-- 1-64 characters
-
-### Good Example
-
-See [skills/react-component-generator/](skills/react-component-generator/) for a multi-file skill with references.
-
----
-
-## Adding a Capability (MCP, Rule, Hook)
-
-Capabilities are JSON files under `registry/capabilities/{type}/`.
-
-### MCP Server
+1. Pick or create a category folder under `mcps/` (e.g., `mcps/devtools/`).
+2. Create a `<name>.json` file with the full MCP configuration:
 
 ```json
 {
-  "id": "yourname/my-mcp",
-  "name": "My MCP Server",
+  "name": "my-mcp",
+  "display_name": "My MCP Server",
   "description": "What this MCP server provides",
-  "version": "1.0.0",
+  "category": "devtools",
   "author": "yourname",
+  "author_github": "yourgithub",
+  "version": "1.0.0",
   "tags": ["relevant", "tags"],
-  "visibility": "public",
-  "adapters": ["claude-code", "cursor", "windsurf"],
-  "mcp": {
-    "command": "npx",
-    "args": ["-y", "@scope/package-name"],
-    "env": [
-      {
-        "key": "API_KEY",
-        "label": "Description shown to user",
-        "required": true
-      }
-    ]
-  }
+  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@scope/package-name"],
+  "env": {
+    "API_KEY": {
+      "type": "secret",
+      "label": "${API_KEY}",
+      "required": true
+    }
+  },
+  "source": {
+    "repo": "org/repo",
+    "url": "https://github.com/org/repo"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-01-01"
+  },
+  "license": "MIT"
 }
 ```
 
-### Rule
+3. Update `mcps/index.json` to include your entry.
+
+## Adding a rule
+
+1. Pick or create a category folder under `rules/` (e.g., `rules/code-quality/`).
+2. Create a `<name>.json` file with `scope` and `content` fields:
 
 ```json
 {
-  "id": "yourname/my-rule",
-  "name": "My Rule",
+  "name": "my-rule",
+  "display_name": "My Rule",
   "description": "What this rule enforces",
-  "version": "1.0.0",
+  "category": "code-quality",
   "author": "yourname",
+  "version": "1.0.0",
   "tags": ["quality"],
-  "visibility": "public",
-  "adapters": ["claude-code", "cursor", "windsurf"],
-  "rule": {
-    "scope": "project",
-    "content": "## Rule Title\n\n- Rule point 1\n- Rule point 2"
-  }
+  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "scope": "project",
+  "content": "## Rule Title\n\n- Rule point 1\n- Rule point 2",
+  "source": { "repo": "", "url": "" },
+  "stats": { "github_stars": 0, "updated_at": "2026-01-01" },
+  "license": "MIT"
 }
 ```
 
-### Hook
+3. Update `rules/index.json` to include your entry.
+
+## Adding a hook
+
+1. Pick or create a category folder under `hooks/` (e.g., `hooks/testing/`).
+2. Create a `<name>.json` file with `trigger` and `command` fields:
 
 ```json
 {
-  "id": "yourname/my-hook",
-  "name": "My Hook",
+  "name": "my-hook",
+  "display_name": "My Hook",
   "description": "What this hook does and when it triggers",
-  "version": "1.0.0",
+  "category": "testing",
   "author": "yourname",
+  "version": "1.0.0",
   "tags": ["automation"],
-  "visibility": "public",
-  "adapters": ["claude-code", "cursor"],
-  "hook": {
-    "trigger": "file_save",
-    "command": "your-command --args"
-  }
+  "compatible_adapters": ["claude-code", "cursor"],
+  "trigger": "file_save",
+  "command": "your-command --args",
+  "source": { "repo": "", "url": "" },
+  "stats": { "github_stars": 0, "updated_at": "2026-01-01" },
+  "license": "MIT"
 }
 ```
 
----
+3. Update `hooks/index.json` to include your entry.
 
-## Adding an Agent
+## Adding an agent
 
-Agents are Markdown files under `registry/agents/`.
+1. Pick or create a category folder under `agents/` (e.g., `agents/code-review/`).
+2. Create a `<name>.json` metadata file with `model`, `color`, `memory`, and other fields.
+3. Create a `<name>.md` file with the agent's description and system prompt.
+4. Update `agents/index.json` to include your entry.
 
-```markdown
----
-id: yourname/my-agent
-name: My Agent
-description: What this agent specializes in
-author: yourname
-version: 1.0.0
-model: sonnet
-color: blue
-memory: project
-tags: [tag1, tag2]
----
+## Updating registry.json
 
-System prompt goes here. Describe the agent's role, expertise,
-and how it should behave.
-```
+After adding any entry, update the root `registry.json` to reflect the new totals and categories.
 
----
+## Metadata schema
 
-## ID Format
+All metadata files should conform to `schemas/metadata.schema.json`. Key required fields:
 
-All contributions use the `github-username/name` format:
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | string | Unique kebab-case identifier |
+| `display_name` | string | Human-readable name |
+| `description` | string | Short description (max 200 chars) |
+| `category` | string | Category folder name |
+| `version` | string | Semantic version (e.g., `1.0.0`) |
+| `tags` | array | Searchable keywords |
+| `license` | string | SPDX license identifier |
 
-- `octocat/github-mcp`
-- `johndoe/react-component-generator`
+## Submission process
 
-Your GitHub username as the author prevents naming conflicts and provides attribution.
+1. Fork the repository.
+2. Add your entry in the appropriate directory.
+3. Update the relevant `index.json` and `registry.json`.
+4. Test it locally with AgentDock.
+5. Submit a pull request describing what you added and how you tested it.
 
-## Submission Process
+## Quality guidelines
 
-1. Fork the repository
-2. Add your skill/capability/agent in the appropriate directory
-3. Test it locally with AgentDock
-4. Submit a Pull Request with a description of what you added and how you tested it
-
-## Quality Guidelines
-
-- **Test thoroughly**: Verify it works with all listed adapters
-- **Clear descriptions**: Help users understand what they're deploying
-- **Minimal permissions**: Only request necessary env vars and tools
-- **Proper tagging**: Use relevant, searchable tags
+- Test thoroughly with all listed adapters.
+- Write clear descriptions so users understand what they are deploying.
+- Request only necessary environment variables and tool permissions.
+- Use relevant, searchable tags.

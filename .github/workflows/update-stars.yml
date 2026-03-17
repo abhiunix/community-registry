@@ -1,0 +1,159 @@
+name: Update GitHub Stars
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Every Monday at 6am UTC
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update star counts and regenerate indexes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+
+          update_stars_in_json() {
+            local file="$1"
+            local repo
+            repo=$(python3 -c "
+          import json, sys
+          with open('$file') as f:
+              d = json.load(f)
+          src = d.get('source', d.get('source_info', {}))
+          if isinstance(src, dict):
+              print(src.get('repo', ''))
+          " 2>/dev/null || echo "")
+
+            if [ -z "$repo" ] || [ "$repo" = "" ]; then
+              return
+            fi
+
+            echo "Fetching stars for $repo..."
+            stars=$(gh api "repos/$repo" --jq '.stargazers_count' 2>/dev/null || echo "")
+
+            if [ -n "$stars" ] && [ "$stars" != "null" ]; then
+              python3 -c "
+          import json
+          with open('$file') as f:
+              d = json.load(f)
+          if 'stats' not in d:
+              d['stats'] = {}
+          d['stats']['github_stars'] = $stars
+          d['stats']['updated_at'] = '$(date +%Y-%m-%d)'
+          with open('$file', 'w') as f:
+              json.dump(d, f, indent=2)
+              f.write('\n')
+          "
+              echo "  $repo: $stars stars"
+            fi
+          }
+
+          # Update MCPs
+          find mcps -name '*.json' ! -name 'index.json' ! -name 'README.md' | while read f; do
+            update_stars_in_json "$f"
+          done
+
+          # Update rules
+          find rules -name '*.json' ! -name 'index.json' | while read f; do
+            update_stars_in_json "$f"
+          done
+
+          # Update hooks
+          find hooks -name '*.json' ! -name 'index.json' | while read f; do
+            update_stars_in_json "$f"
+          done
+
+          # Update skill metadata.json files
+          find skills -name 'metadata.json' | while read f; do
+            update_stars_in_json "$f"
+          done
+
+          # Update agent .json files
+          find agents -name '*.json' ! -name 'index.json' | while read f; do
+            update_stars_in_json "$f"
+          done
+
+          # Regenerate index.json files
+          python3 -c "
+          import json, os, glob
+          from datetime import datetime, timezone
+
+          def build_index(type_dir, is_skill=False):
+              entries = []
+              categories = set()
+              for root, dirs, files in os.walk(type_dir):
+                  for f in files:
+                      if f == 'index.json' or f == 'README.md':
+                          continue
+                      path = os.path.join(root, f)
+                      if is_skill:
+                          if f != 'metadata.json':
+                              continue
+                      else:
+                          if not f.endswith('.json'):
+                              continue
+                      try:
+                          with open(path) as fh:
+                              d = json.load(fh)
+                          cat = d.get('category', '')
+                          if cat:
+                              categories.add(cat)
+                          entry = {
+                              'name': d.get('name', ''),
+                              'display_name': d.get('display_name', d.get('name', '')),
+                              'description': d.get('description', ''),
+                              'category': cat,
+                              'author_github': d.get('author_github', ''),
+                              'stars': d.get('stats', {}).get('github_stars', 0),
+                              'tags': d.get('tags', []),
+                              'path': os.path.relpath(os.path.dirname(path) if is_skill else path, type_dir)
+                          }
+                          entries.append(entry)
+                      except Exception as e:
+                          print(f'Warning: {path}: {e}')
+              entries.sort(key=lambda x: x.get('stars', 0), reverse=True)
+              index = {
+                  'updated_at': datetime.now(timezone.utc).isoformat(),
+                  'categories': sorted(categories),
+                  'total': len(entries),
+                  'entries': entries
+              }
+              index_path = os.path.join(type_dir, 'index.json')
+              with open(index_path, 'w') as fh:
+                  json.dump(index, fh, indent=2)
+                  fh.write('\n')
+              print(f'{type_dir}/index.json: {len(entries)} entries')
+              return {'total': len(entries), 'categories': sorted(categories), 'top_stars': entries[0]['stars'] if entries else 0}
+
+          summary = {}
+          for t in ['skills', 'mcps', 'rules', 'hooks', 'agents']:
+              if os.path.isdir(t):
+                  summary[t] = build_index(t, is_skill=(t == 'skills'))
+
+          registry = {'updated_at': datetime.now(timezone.utc).isoformat()}
+          registry.update(summary)
+          with open('registry.json', 'w') as f:
+              json.dump(registry, f, indent=2)
+              f.write('\n')
+          print('registry.json updated')
+          "
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update GitHub star counts [automated]"
+            git push
+          fi

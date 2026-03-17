@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-developer",
+  "display_name": "Full Stack Developer",
+  "description": "Comprehensive full-stack development agent for React frontends, Node.js backends, databases, and API integrations",
+  "category": "development",
+  "author": "webdev-experts",
+  "author_github": "",
+  "version": "1.0.0",
+  "model": "sonnet",
+  "color": "blue",
+  "memory": "project",
+  "tags": ["fullstack", "react", "nodejs", "database", "api"],
+  "source": {
+    "repo": "",
+    "url": ""
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-17"
+  },
+  "license": "MIT"
+}

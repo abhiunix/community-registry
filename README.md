@@ -1,74 +1,99 @@
 # AgentDock Community Registry
 
-Community-contributed capabilities, skills, and agents for [AgentDock](https://github.com/abhijeetsingh/agentdock).
+A curated collection of capabilities, skills, and agents for AI coding assistants. Used by [AgentDock](https://github.com/abhijeetsingh/agentdock) to deploy configurations to Claude Code, Cursor, and Windsurf.
 
-## Structure
+## Repository structure
 
 ```
 community-registry/
-├── skills/                          # Skills (agentskills.io spec)
-│   ├── react-component-generator/
-│   │   ├── SKILL.md                 # Entry point with frontmatter
-│   │   └── references/              # Supporting files
-│   │       └── patterns.md
-│   ├── api-endpoint-scaffolder/
-│   │   └── SKILL.md
-│   └── git-commit-reviewer/
-│       └── SKILL.md
-├── registry/
-│   ├── capabilities/                # Other capabilities (JSON format)
-│   │   ├── mcps/                    # MCP server definitions
-│   │   │   ├── github-mcp.json
-│   │   │   └── postgres-mcp.json
-│   │   ├── rules/                   # Coding rules
-│   │   │   └── general-code-review.json
-│   │   └── hooks/                   # Event-triggered automation
-│   │       └── auto-test-runner.json
-│   └── agents/                      # Agent definitions (.md)
-│       ├── code-reviewer.md
-│       ├── api-designer.md
-│       └── fullstack-developer.md
-├── CONTRIBUTING.md
-└── README.md
+├── registry.json          # Master index with totals and categories
+├── schemas/               # JSON Schema definitions
+│   └── metadata.schema.json
+├── skills/                # SKILL.md files with metadata
+│   ├── index.json
+│   └── development/
+│       ├── git-commit-reviewer/
+│       ├── api-endpoint-scaffolder/
+│       └── react-component-generator/
+├── mcps/                  # MCP server definitions
+│   ├── index.json
+│   └── devtools/
+│       ├── github-mcp.json
+│       └── postgres-mcp.json
+├── rules/                 # Rule definitions
+│   ├── index.json
+│   └── code-quality/
+│       └── general-code-review.json
+├── hooks/                 # Hook definitions
+│   ├── index.json
+│   └── testing/
+│       └── auto-test-runner.json
+└── agents/                # Agent definitions (.md + .json pairs)
+    ├── index.json
+    ├── code-review/
+    │   └── code-reviewer
+    ├── architecture/
+    │   └── api-designer
+    └── development/
+        └── fullstack-developer
 ```
+
+## Entry types
+
+| Type | Description | Format |
+|------|-------------|--------|
+| **Skills** | Domain-specific instructions for AI agents | `SKILL.md` + `metadata.json` |
+| **MCPs** | Model Context Protocol server configurations | Single `.json` file |
+| **Rules** | Lightweight text directives injected into agent context | Single `.json` file |
+| **Hooks** | Commands triggered by events (file save, pre-commit) | Single `.json` file |
+| **Agents** | AI sub-agents with system prompts and configuration | `.md` + `.json` pair |
+
+## How it works
+
+1. AgentDock fetches `registry.json` to discover available entries.
+2. Each type folder has an `index.json` with summary data for browsing.
+3. Individual metadata files contain full configuration for deployment.
+4. AgentDock translates entries into IDE-specific formats (Claude Code, Cursor, Windsurf).
 
 ## Skills
 
-Skills follow the [agentskills.io](https://agentskills.io/specification) specification. Each skill is a directory with a `SKILL.md` entry point.
-
-| Skill | Description |
-|-------|-------------|
-| [react-component-generator](skills/react-component-generator/) | Generates React components with TypeScript, Tailwind, accessibility, and tests |
-| [api-endpoint-scaffolder](skills/api-endpoint-scaffolder/) | Scaffolds REST API endpoints with validation, error handling, and tests |
-| [git-commit-reviewer](skills/git-commit-reviewer/) | Reviews staged changes for bugs, security issues, and code quality |
+| Skill | Category | Description |
+|-------|----------|-------------|
+| [Git Commit Reviewer](skills/development/git-commit-reviewer/) | development | Reviews staged changes for bugs, security issues, and code quality |
+| [API Endpoint Scaffolder](skills/development/api-endpoint-scaffolder/) | development | Scaffolds REST API endpoints with validation, error handling, and tests |
+| [React Component Generator](skills/development/react-component-generator/) | development | Generates React components with TypeScript, Tailwind, accessibility, and tests |
 
 ## MCP Servers
 
-| Name | Description |
-|------|-------------|
-| [github-mcp](registry/capabilities/mcps/github-mcp.json) | GitHub repository access, issues, PRs, and code search |
-| [postgres-mcp](registry/capabilities/mcps/postgres-mcp.json) | PostgreSQL database queries and schema inspection |
+| Name | Category | Description |
+|------|----------|-------------|
+| [GitHub MCP](mcps/devtools/github-mcp.json) | devtools | GitHub repository access, issues, PRs, and code search |
+| [PostgreSQL MCP](mcps/devtools/postgres-mcp.json) | devtools | PostgreSQL database queries and schema inspection |
 
 ## Rules
 
-| Name | Description |
-|------|-------------|
-| [general-code-review](registry/capabilities/rules/general-code-review.json) | Lightweight checklist for consistent code reviews |
+| Name | Category | Description |
+|------|----------|-------------|
+| [General Code Review](rules/code-quality/general-code-review.json) | code-quality | Lightweight checklist for consistent code reviews |
 
 ## Hooks
 
-| Name | Description |
-|------|-------------|
-| [auto-test-runner](registry/capabilities/hooks/auto-test-runner.json) | Runs relevant tests automatically when files are modified |
+| Name | Category | Description |
+|------|----------|-------------|
+| [Auto Test Runner](hooks/testing/auto-test-runner.json) | testing | Runs relevant tests automatically when files are modified |
 
 ## Agents
 
-| Name | Description |
-|------|-------------|
-| [code-reviewer](registry/agents/code-reviewer.md) | Reviews code for quality, security, and best practices |
-| [api-designer](registry/agents/api-designer.md) | Designs RESTful and GraphQL APIs |
-| [fullstack-developer](registry/agents/fullstack-developer.md) | End-to-end web development with React, Node.js, and databases |
+| Name | Category | Description |
+|------|----------|-------------|
+| [Code Reviewer](agents/code-review/) | code-review | Reviews code for quality, security, and best practices |
+| [API Designer](agents/architecture/) | architecture | Designs RESTful and GraphQL APIs |
+| [Full Stack Developer](agents/development/) | development | End-to-end web development with React, Node.js, and databases |
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add your own skills, capabilities, and agents.
+
+## License
+
+All entries in this registry are individually licensed. See each entry's `license` field. The registry structure itself is MIT licensed.

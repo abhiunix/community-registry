@@ -1,0 +1,24 @@
+{
+  "name": "api-endpoint-scaffolder",
+  "display_name": "API Endpoint Scaffolder",
+  "description": "Scaffolds REST API endpoints with route handler, validation, error handling, and tests. Detects framework automatically.",
+  "category": "development",
+  "author": "community",
+  "author_github": "anthropics",
+  "version": "1.0.0",
+  "tags": ["api", "rest", "scaffolding", "express", "nextjs"],
+  "compatible_adapters": ["claude-code", "cursor"],
+  "source": {
+    "repo": "anthropics/skills",
+    "path": "skills/api-endpoint-scaffolder",
+    "branch": "main",
+    "url": "https://github.com/anthropics/skills"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

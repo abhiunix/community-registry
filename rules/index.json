@@ -1,0 +1,87 @@
+{
+  "updated_at": "2026-03-17T00:39:27.768904+00:00",
+  "categories": [
+    "code-quality",
+    "performance",
+    "security",
+    "style"
+  ],
+  "total": 5,
+  "entries": [
+    {
+      "name": "no-secrets-in-code",
+      "display_name": "No Secrets in Code",
+      "description": "Prevent hardcoded secrets, API keys, tokens, and passwords from being committed to the codebase",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "security",
+        "secrets",
+        "api-keys",
+        "best-practices"
+      ],
+      "path": "security/no-secrets-in-code.json"
+    },
+    {
+      "name": "input-validation",
+      "display_name": "Input Validation",
+      "description": "Always validate and sanitize user input at system boundaries to prevent injection attacks",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "security",
+        "validation",
+        "injection",
+        "xss",
+        "sql-injection"
+      ],
+      "path": "security/input-validation.json"
+    },
+    {
+      "name": "consistent-naming",
+      "display_name": "Consistent Naming Conventions",
+      "description": "Enforce consistent naming conventions across the codebase for variables, functions, classes, and files",
+      "category": "style",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "style",
+        "naming",
+        "conventions",
+        "readability"
+      ],
+      "path": "style/consistent-naming.json"
+    },
+    {
+      "name": "general-code-review",
+      "display_name": "General Code Review Checklist",
+      "description": "A lightweight checklist for consistent code reviews: readability, tests, and security",
+      "category": "code-quality",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "code-review",
+        "quality",
+        "checklist"
+      ],
+      "path": "code-quality/general-code-review.json"
+    },
+    {
+      "name": "no-n-plus-one",
+      "display_name": "No N+1 Queries",
+      "description": "Detect and prevent N+1 query patterns in database access code",
+      "category": "performance",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "performance",
+        "database",
+        "queries",
+        "optimization"
+      ],
+      "path": "performance/no-n-plus-one.json"
+    }
+  ]
+}

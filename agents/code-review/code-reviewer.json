@@ -1,0 +1,22 @@
+{
+  "name": "code-reviewer",
+  "display_name": "Code Reviewer",
+  "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
+  "category": "code-review",
+  "author": "codeqa-tools",
+  "author_github": "",
+  "version": "1.0.0",
+  "model": "sonnet",
+  "color": "purple",
+  "memory": "session",
+  "tags": ["code-review", "quality", "security", "best-practices"],
+  "source": {
+    "repo": "",
+    "url": ""
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-17"
+  },
+  "license": "MIT"
+}

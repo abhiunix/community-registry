@@ -1,0 +1,132 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON files
+        run: |
+          set -e
+          errors=0
+
+          # Validate all JSON files are parseable
+          find . -name '*.json' ! -path './.git/*' | while read f; do
+            if ! python3 -m json.tool "$f" > /dev/null 2>&1; then
+              echo "INVALID JSON: $f"
+              errors=$((errors + 1))
+            fi
+          done
+
+          if [ "$errors" -gt 0 ]; then
+            echo "Found $errors invalid JSON files"
+            exit 1
+          fi
+          echo "All JSON files are valid"
+
+      - name: Validate required fields
+        run: |
+          python3 -c "
+          import json, os, sys
+
+          errors = []
+
+          # Required fields per type
+          required = {
+              'mcps': ['name', 'display_name', 'description', 'category', 'compatible_adapters'],
+              'rules': ['name', 'display_name', 'description', 'category'],
+              'hooks': ['name', 'display_name', 'description', 'category'],
+              'agents': ['name', 'display_name', 'description', 'category'],
+              'skills': ['name', 'display_name', 'description', 'category'],
+          }
+
+          valid_categories = {
+              'skills': ['development', 'testing', 'devops', 'security', 'data', 'design', 'productivity', 'ai-ml', 'language', 'framework', 'integration', 'other'],
+              'mcps': ['devtools', 'ai', 'communication', 'cloud', 'data', 'database', 'monitoring', 'other'],
+              'rules': ['code-quality', 'security', 'style', 'performance', 'accessibility', 'other'],
+              'hooks': ['testing', 'linting', 'deployment', 'git', 'other'],
+              'agents': ['code-review', 'architecture', 'testing', 'documentation', 'devops', 'development', 'other'],
+          }
+
+          for type_dir in ['mcps', 'rules', 'hooks', 'agents', 'skills']:
+              if not os.path.isdir(type_dir):
+                  continue
+              is_skill = (type_dir == 'skills')
+              target_name = 'metadata.json' if is_skill else '*.json'
+
+              for root, dirs, files in os.walk(type_dir):
+                  for f in files:
+                      if f in ('index.json', 'README.md') or not f.endswith('.json'):
+                          continue
+                      if is_skill and f != 'metadata.json':
+                          continue
+
+                      path = os.path.join(root, f)
+                      try:
+                          with open(path) as fh:
+                              d = json.load(fh)
+
+                          # Check required fields
+                          for field in required.get(type_dir, []):
+                              if not d.get(field):
+                                  errors.append(f'{path}: missing required field \"{field}\"')
+
+                          # Check category is valid
+                          cat = d.get('category', '')
+                          valid = valid_categories.get(type_dir, [])
+                          if cat and valid and cat not in valid:
+                              errors.append(f'{path}: invalid category \"{cat}\". Must be one of: {valid}')
+
+                      except json.JSONDecodeError as e:
+                          errors.append(f'{path}: JSON parse error: {e}')
+
+          if errors:
+              print('Validation errors:')
+              for e in errors:
+                  print(f'  - {e}')
+              sys.exit(1)
+          else:
+              print('All files pass validation')
+          "
+
+      - name: Validate SKILL.md frontmatter
+        run: |
+          python3 -c "
+          import os, sys
+
+          errors = []
+          for root, dirs, files in os.walk('skills'):
+              for f in files:
+                  if f != 'SKILL.md':
+                      continue
+                  path = os.path.join(root, f)
+                  with open(path) as fh:
+                      content = fh.read().strip()
+                  if not content.startswith('---'):
+                      errors.append(f'{path}: missing YAML frontmatter (must start with ---)')
+                      continue
+                  end = content.find('---', 3)
+                  if end == -1:
+                      errors.append(f'{path}: unclosed YAML frontmatter')
+                      continue
+                  fm = content[3:end]
+                  has_name = any(l.strip().startswith('name:') for l in fm.split('\n'))
+                  has_desc = any(l.strip().startswith('description:') for l in fm.split('\n'))
+                  if not has_name:
+                      errors.append(f'{path}: frontmatter missing \"name\" field')
+                  if not has_desc:
+                      errors.append(f'{path}: frontmatter missing \"description\" field')
+
+          if errors:
+              print('SKILL.md validation errors:')
+              for e in errors:
+                  print(f'  - {e}')
+              sys.exit(1)
+          else:
+              print('All SKILL.md files pass validation')
+          "

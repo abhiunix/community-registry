@@ -1,0 +1,22 @@
+{
+  "name": "auto-test-runner",
+  "display_name": "Auto Test Runner",
+  "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
+  "category": "testing",
+  "author": "testautomation",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": ["testing", "automation", "ci", "development"],
+  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "trigger": "file_save",
+  "command": "npm test -- --findRelatedTests $FILE_PATH --passWithNoTests",
+  "source": {
+    "repo": "",
+    "url": ""
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-17"
+  },
+  "license": "MIT"
+}
