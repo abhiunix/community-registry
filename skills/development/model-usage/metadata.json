@@ -1,0 +1,31 @@
+{
+  "name": "model-usage",
+  "display_name": "Model Usage",
+  "description": "Track and display AI model token usage",
+  "category": "development",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "tokens",
+    "usage",
+    "tracking",
+    "costs"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/model-usage",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/model-usage"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": true,
+  "file_count": 4,
+  "license": "MIT"
+}

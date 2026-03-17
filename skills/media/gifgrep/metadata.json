@@ -1,0 +1,31 @@
+{
+  "name": "gifgrep",
+  "display_name": "GIF Grep",
+  "description": "Search and find GIFs",
+  "category": "media",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "gif",
+    "search",
+    "images",
+    "animation"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/gifgrep",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/gifgrep"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

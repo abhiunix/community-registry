@@ -1,0 +1,31 @@
+{
+  "name": "bear-notes",
+  "display_name": "Bear Notes",
+  "description": "Manage Bear notes \u2014 create, search, tag, and organize",
+  "category": "productivity",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "bear",
+    "notes",
+    "markdown",
+    "macos"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/bear-notes",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/bear-notes"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

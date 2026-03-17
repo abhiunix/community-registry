@@ -1,0 +1,31 @@
+{
+  "name": "himalaya",
+  "display_name": "Himalaya",
+  "description": "CLI email client \u2014 read, send, and manage emails",
+  "category": "communication",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "email",
+    "cli",
+    "imap",
+    "smtp"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/himalaya",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/himalaya"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 3,
+  "license": "MIT"
+}

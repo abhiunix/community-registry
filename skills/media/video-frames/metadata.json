@@ -1,0 +1,31 @@
+{
+  "name": "video-frames",
+  "display_name": "Video Frames",
+  "description": "Extract frames from video files",
+  "category": "media",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "video",
+    "frames",
+    "extraction",
+    "ffmpeg"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/video-frames",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/video-frames"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": true,
+  "file_count": 2,
+  "license": "MIT"
+}

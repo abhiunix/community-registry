@@ -1,0 +1,31 @@
+{
+  "name": "eightctl",
+  "display_name": "Eight Sleep Control",
+  "description": "Control Eight Sleep smart mattress",
+  "category": "integration",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "eight-sleep",
+    "smart-home",
+    "sleep",
+    "iot"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/eightctl",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/eightctl"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

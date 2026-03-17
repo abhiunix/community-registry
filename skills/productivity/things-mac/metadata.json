@@ -1,0 +1,31 @@
+{
+  "name": "things-mac",
+  "display_name": "Things 3",
+  "description": "Manage Things 3 tasks on macOS \u2014 create, complete, organize",
+  "category": "productivity",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "things",
+    "tasks",
+    "macos",
+    "gtd"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/things-mac",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/things-mac"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

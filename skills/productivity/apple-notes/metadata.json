@@ -1,0 +1,31 @@
+{
+  "name": "apple-notes",
+  "display_name": "Apple Notes",
+  "description": "Manage Apple Notes \u2014 create, search, list, and organize notes",
+  "category": "productivity",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "apple",
+    "notes",
+    "macos",
+    "productivity"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/apple-notes",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/apple-notes"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

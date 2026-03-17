@@ -1,0 +1,31 @@
+{
+  "name": "xurl",
+  "display_name": "XURL",
+  "description": "Extract and manage URLs from text",
+  "category": "integration",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "urls",
+    "extraction",
+    "text",
+    "links"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/xurl",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/xurl"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

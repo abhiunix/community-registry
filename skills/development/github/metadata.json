@@ -1,0 +1,31 @@
+{
+  "name": "github",
+  "display_name": "GitHub",
+  "description": "Interact with GitHub repositories, PRs, and workflows",
+  "category": "development",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "github",
+    "git",
+    "repositories",
+    "pull-requests"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/github",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/github"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

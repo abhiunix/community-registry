@@ -1,0 +1,31 @@
+{
+  "name": "notion",
+  "display_name": "Notion",
+  "description": "Interact with Notion pages, databases, and workspaces",
+  "category": "productivity",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "notion",
+    "productivity",
+    "databases",
+    "wiki"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/notion",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/notion"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

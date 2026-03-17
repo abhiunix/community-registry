@@ -1,0 +1,31 @@
+{
+  "name": "openai-whisper-api",
+  "display_name": "OpenAI Whisper API",
+  "description": "Transcribe audio using OpenAI Whisper API",
+  "category": "media",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "whisper",
+    "transcription",
+    "api",
+    "speech-to-text"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/openai-whisper-api",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/openai-whisper-api"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": true,
+  "file_count": 2,
+  "license": "MIT"
+}

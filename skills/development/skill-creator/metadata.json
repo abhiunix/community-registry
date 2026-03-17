@@ -1,0 +1,31 @@
+{
+  "name": "skill-creator",
+  "display_name": "Skill Creator",
+  "description": "Create new OpenClaw skills with proper structure",
+  "category": "development",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "openclaw",
+    "skills",
+    "scaffolding",
+    "templates"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/skill-creator",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/skill-creator"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": true,
+  "file_count": 6,
+  "license": "MIT"
+}

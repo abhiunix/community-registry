@@ -1,0 +1,31 @@
+{
+  "name": "sherpa-onnx-tts",
+  "display_name": "Sherpa ONNX TTS",
+  "description": "Text-to-speech using Sherpa ONNX models",
+  "category": "media",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "tts",
+    "text-to-speech",
+    "onnx",
+    "audio"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/sherpa-onnx-tts",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/sherpa-onnx-tts"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 2,
+  "license": "MIT"
+}

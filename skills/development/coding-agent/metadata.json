@@ -1,0 +1,31 @@
+{
+  "name": "coding-agent",
+  "display_name": "Coding Agent",
+  "description": "Autonomous coding agent for complex development tasks",
+  "category": "development",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "coding",
+    "agent",
+    "autonomous",
+    "development"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/coding-agent",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/coding-agent"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

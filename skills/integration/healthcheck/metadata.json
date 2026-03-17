@@ -1,0 +1,31 @@
+{
+  "name": "healthcheck",
+  "display_name": "Health Check",
+  "description": "Monitor service health and uptime",
+  "category": "integration",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "monitoring",
+    "health",
+    "uptime",
+    "services"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/healthcheck",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/healthcheck"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

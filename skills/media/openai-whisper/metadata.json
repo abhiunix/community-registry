@@ -1,0 +1,31 @@
+{
+  "name": "openai-whisper",
+  "display_name": "OpenAI Whisper Local",
+  "description": "Transcribe audio using local OpenAI Whisper model",
+  "category": "media",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "whisper",
+    "transcription",
+    "audio",
+    "speech-to-text"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/openai-whisper",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/openai-whisper"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "nano-banana-pro",
+  "display_name": "Nano Banana Pro",
+  "description": "Run local AI inference on Banana Pro hardware",
+  "category": "ai",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "local-ai",
+    "inference",
+    "edge",
+    "hardware"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/nano-banana-pro",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/nano-banana-pro"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": true,
+  "file_count": 3,
+  "license": "MIT"
+}

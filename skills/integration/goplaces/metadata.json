@@ -1,0 +1,31 @@
+{
+  "name": "goplaces",
+  "display_name": "Go Places",
+  "description": "Search and navigate places using maps",
+  "category": "integration",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "maps",
+    "places",
+    "navigation",
+    "search"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/goplaces",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/goplaces"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "camsnap",
+  "display_name": "CamSnap",
+  "description": "Capture photos and screenshots from camera",
+  "category": "media",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "camera",
+    "photos",
+    "capture",
+    "macos"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/camsnap",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/camsnap"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

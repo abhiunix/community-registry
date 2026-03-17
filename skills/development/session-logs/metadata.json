@@ -1,0 +1,31 @@
+{
+  "name": "session-logs",
+  "display_name": "Session Logs",
+  "description": "View and manage AI session logs",
+  "category": "development",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "logs",
+    "sessions",
+    "debugging",
+    "history"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/session-logs",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/session-logs"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

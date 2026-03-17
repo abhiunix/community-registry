@@ -1,0 +1,31 @@
+{
+  "name": "clawhub",
+  "display_name": "ClawHub",
+  "description": "Browse and install OpenClaw skills from the hub",
+  "category": "integration",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "openclaw",
+    "hub",
+    "skills",
+    "marketplace"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/clawhub",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/clawhub"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}

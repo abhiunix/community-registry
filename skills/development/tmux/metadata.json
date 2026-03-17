@@ -1,0 +1,31 @@
+{
+  "name": "tmux",
+  "display_name": "Tmux",
+  "description": "Manage tmux sessions, windows, and panes",
+  "category": "development",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "tmux",
+    "terminal",
+    "multiplexer",
+    "sessions"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/tmux",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/tmux"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": true,
+  "file_count": 3,
+  "license": "MIT"
+}

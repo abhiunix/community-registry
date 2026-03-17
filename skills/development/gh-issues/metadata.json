@@ -1,0 +1,31 @@
+{
+  "name": "gh-issues",
+  "display_name": "GitHub Issues",
+  "description": "Manage GitHub issues \u2014 create, list, comment, close",
+  "category": "development",
+  "author": "openclaw",
+  "author_github": "openclaw",
+  "version": "1.0.0",
+  "tags": [
+    "github",
+    "issues",
+    "bug-tracking",
+    "project-management"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "openclaw/openclaw",
+    "path": "skills/gh-issues",
+    "branch": "main",
+    "url": "https://github.com/openclaw/openclaw/tree/main/skills/gh-issues"
+  },
+  "stats": {
+    "github_stars": 317520,
+    "updated_at": "2026-03-17"
+  },
+  "has_scripts": false,
+  "file_count": 1,
+  "license": "MIT"
+}
