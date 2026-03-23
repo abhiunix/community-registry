@@ -1,0 +1,32 @@
+{
+  "name": "humanizer",
+  "display_name": "Humanizer",
+  "description": "Remove signs of AI-generated writing from text, making it sound natural and human-written",
+  "category": "ai",
+  "author": "blader",
+  "author_github": "blader",
+  "version": "2.2.0",
+  "tags": [
+    "writing",
+    "editing",
+    "ai-detection",
+    "humanize",
+    "text"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "blader/humanizer",
+    "path": ".",
+    "branch": "main",
+    "url": "https://github.com/blader/humanizer"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-19"
+  },
+  "has_scripts": false,
+  "file_count": 2,
+  "license": "MIT"
+}

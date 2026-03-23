@@ -6,13 +6,22 @@
   "author": "testautomation",
   "author_github": "",
   "version": "1.0.0",
-  "tags": ["testing", "automation", "ci", "development"],
-  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "tags": [
+    "testing",
+    "automation",
+    "ci",
+    "development"
+  ],
+  "compatible_adapters": [
+    "claude-code",
+    "cursor",
+    "windsurf"
+  ],
   "trigger": "file_save",
   "command": "npm test -- --findRelatedTests $FILE_PATH --passWithNoTests",
   "source": {
-    "repo": "",
-    "url": ""
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/hooks/testing/auto-test-runner.json"
   },
   "stats": {
     "github_stars": 0,

@@ -1,0 +1,32 @@
+{
+  "name": "secure-code-review",
+  "display_name": "Secure Code Review",
+  "description": "Security-focused code review that checks for injection, auth flaws, crypto misuse, data exposure, and insecure patterns across any language",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": [
+    "security",
+    "code-review",
+    "vulnerabilities",
+    "owasp",
+    "static-analysis"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "path": "skills/security/secure-code-review",
+    "branch": "main",
+    "url": "https://github.com/abhiunix/community-registry/tree/main/skills/security/secure-code-review"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "has_scripts": false,
+  "file_count": 2,
+  "license": "MIT"
+}

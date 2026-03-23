@@ -81,6 +81,13 @@ jobs:
             update_stars_in_json "$f"
           done
 
+          # Update preset .json files
+          if [ -d presets ]; then
+            find presets -name '*.json' ! -name 'index.json' | while read f; do
+              update_stars_in_json "$f"
+            done
+          fi
+
           # Regenerate index.json files
           python3 -c "
           import json, os, glob
@@ -134,7 +141,7 @@ jobs:
               return {'total': len(entries), 'categories': sorted(categories), 'top_stars': entries[0]['stars'] if entries else 0}
 
           summary = {}
-          for t in ['skills', 'mcps', 'rules', 'hooks', 'agents']:
+          for t in ['skills', 'mcps', 'rules', 'hooks', 'agents', 'presets']:
               if os.path.isdir(t):
                   summary[t] = build_index(t, is_skill=(t == 'skills'))
 

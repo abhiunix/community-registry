@@ -18,10 +18,10 @@
     "cursor"
   ],
   "source": {
-    "repo": "anthropics/skills",
-    "path": "skills/api-endpoint-scaffolder",
+    "repo": "abhiunix/community-registry",
+    "path": "skills/development/api-endpoint-scaffolder",
     "branch": "main",
-    "url": "https://github.com/anthropics/skills"
+    "url": "https://github.com/abhiunix/community-registry/tree/main/skills/development/api-endpoint-scaffolder"
   },
   "stats": {
     "github_stars": 0,

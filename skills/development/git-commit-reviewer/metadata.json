@@ -17,10 +17,10 @@
     "cursor"
   ],
   "source": {
-    "repo": "anthropics/skills",
-    "path": "skills/git-commit-reviewer",
+    "repo": "abhiunix/community-registry",
+    "path": "skills/development/git-commit-reviewer",
     "branch": "main",
-    "url": "https://github.com/anthropics/skills"
+    "url": "https://github.com/abhiunix/community-registry/tree/main/skills/development/git-commit-reviewer"
   },
   "stats": {
     "github_stars": 0,

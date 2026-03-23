@@ -1,0 +1,28 @@
+{
+  "name": "threat-modeler",
+  "display_name": "Threat Modeler",
+  "description": "Analyzes system architecture to identify threats using STRIDE methodology, maps attack surfaces, and produces threat models with risk ratings and mitigations",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "model": "sonnet",
+  "color": "red",
+  "memory": "project",
+  "tags": [
+    "security",
+    "threat-modeling",
+    "stride",
+    "architecture",
+    "risk-assessment"
+  ],
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/agents/security/threat-modeler.json"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "license": "MIT"
+}

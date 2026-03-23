@@ -1,0 +1,32 @@
+{
+  "name": "secure-error-handling",
+  "display_name": "Secure Error Handling",
+  "description": "Handle errors securely without leaking stack traces, internal paths, database details, or system information to users",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": [
+    "security",
+    "error-handling",
+    "information-disclosure",
+    "logging",
+    "owasp"
+  ],
+  "compatible_adapters": [
+    "claude-code",
+    "cursor",
+    "windsurf"
+  ],
+  "scope": "project",
+  "content": "## Secure Error Handling\n\nErrors are for developers. Users get friendly messages. Attackers get nothing useful (OWASP A04:2021 Insecure Design).\n\n### Rules\n- NEVER expose stack traces, internal paths, database errors, or SQL queries to end users\n- Return generic error messages to clients: \"Something went wrong\" or \"Request failed\"\n- Log full error details server-side with correlation IDs\n- Return a correlation/request ID to the client so support can look up the full error\n- Use different error detail levels per environment: verbose in development, minimal in production\n- Catch all unhandled exceptions at the top level — do not let frameworks show default error pages\n- Do not include internal IP addresses, server names, or software versions in responses\n- Do not differentiate between \"user not found\" and \"wrong password\" — use generic auth errors\n\n### What NOT to Return to Users\n```json\n// BAD — leaks internals\n{\n  \"error\": \"PG::UndefinedTable: ERROR: relation \\\"users\\\" does not exist\",\n  \"stack\": \"at /app/src/models/user.rb:42\\n at /app/src/controllers/auth.rb:15\",\n  \"query\": \"SELECT * FROM users WHERE email = 'admin@company.com'\"\n}\n\n// GOOD — safe error response\n{\n  \"error\": \"An unexpected error occurred.\",\n  \"request_id\": \"req_a1b2c3d4\"\n}\n```\n\n### Server-Side Logging (DO log these)\n```\n[ERROR] [req_a1b2c3d4] [2026-03-23T10:15:30Z] PG::UndefinedTable: relation \"users\" does not exist\n  at /app/src/models/user.rb:42\n  at /app/src/controllers/auth.rb:15\n  user_id=anonymous ip=192.168.1.1 endpoint=POST /api/login\n```\n\n### Framework Configuration\n\n#### Express.js\n```javascript\n// Global error handler — must be last middleware\napp.use((err, req, res, next) => {\n  const requestId = req.id;\n  logger.error({ err, requestId, path: req.path });\n  res.status(err.status || 500).json({\n    error: 'An unexpected error occurred.',\n    request_id: requestId\n  });\n});\n```\n\n#### Django\n```python\n# settings.py\nDEBUG = False  # NEVER True in production\n\n# Custom error handler\ndef handler500(request):\n    return JsonResponse({'error': 'An unexpected error occurred.'}, status=500)\n```\n\n#### Go\n```go\nfunc errorHandler(w http.ResponseWriter, r *http.Request, err error) {\n    reqID := r.Context().Value(\"request_id\")\n    log.Error().Err(err).Str(\"request_id\", reqID).Msg(\"unhandled error\")\n    http.Error(w, `{\"error\":\"An unexpected error occurred.\"}`, 500)\n}\n```\n\n### Common Information Leaks\n- Server headers: remove `X-Powered-By`, `Server` headers in production\n- Debug endpoints: disable `/debug`, `/status`, `/health` endpoints that expose internals\n- Error pages: replace default framework error pages (Django debug, Express stack traces)\n- API documentation: do not expose Swagger/OpenAPI in production unless intentional\n- Source maps: do not deploy source maps to production",
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/rules/security/secure-error-handling.json"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "license": "MIT"
+}

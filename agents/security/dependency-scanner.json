@@ -1,0 +1,28 @@
+{
+  "name": "dependency-scanner",
+  "display_name": "Dependency Scanner",
+  "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "model": "sonnet",
+  "color": "blue",
+  "memory": "project",
+  "tags": [
+    "security",
+    "dependencies",
+    "vulnerabilities",
+    "supply-chain",
+    "scanning"
+  ],
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/agents/security/dependency-scanner.json"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "license": "MIT"
+}

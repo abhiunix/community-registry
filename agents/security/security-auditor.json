@@ -1,0 +1,28 @@
+{
+  "name": "security-auditor",
+  "display_name": "Security Auditor",
+  "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10, identifies attack surfaces, and provides actionable remediation guidance with severity ratings",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "model": "sonnet",
+  "color": "red",
+  "memory": "project",
+  "tags": [
+    "security",
+    "audit",
+    "owasp",
+    "vulnerabilities",
+    "pentest"
+  ],
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/agents/security/security-auditor.json"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "license": "MIT"
+}

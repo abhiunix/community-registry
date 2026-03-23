@@ -6,11 +6,23 @@
   "author": "dbtools-org",
   "author_github": "modelcontextprotocol",
   "version": "1.0.0",
-  "tags": ["database", "postgres", "sql", "data"],
-  "compatible_adapters": ["claude-code", "cursor", "windsurf"],
+  "tags": [
+    "database",
+    "postgres",
+    "sql",
+    "data"
+  ],
+  "compatible_adapters": [
+    "claude-code",
+    "cursor",
+    "windsurf"
+  ],
   "transport": "stdio",
   "command": "npx",
-  "args": ["-y", "@modelcontextprotocol/server-postgres"],
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-postgres"
+  ],
   "env": {
     "POSTGRES_CONNECTION_STRING": {
       "type": "secret",
@@ -19,8 +31,8 @@
     }
   },
   "source": {
-    "repo": "modelcontextprotocol/servers",
-    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres"
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/mcps/devtools/postgres-mcp.json"
   },
   "stats": {
     "github_stars": 15200,

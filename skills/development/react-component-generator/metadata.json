@@ -18,10 +18,10 @@
     "cursor"
   ],
   "source": {
-    "repo": "anthropics/skills",
-    "path": "skills/react-component-generator",
+    "repo": "abhiunix/community-registry",
+    "path": "skills/development/react-component-generator",
     "branch": "main",
-    "url": "https://github.com/anthropics/skills"
+    "url": "https://github.com/abhiunix/community-registry/tree/main/skills/development/react-component-generator"
   },
   "stats": {
     "github_stars": 0,

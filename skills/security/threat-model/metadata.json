@@ -1,0 +1,32 @@
+{
+  "name": "threat-model",
+  "display_name": "Threat Model",
+  "description": "Generate STRIDE-based threat models from codebase analysis, identifying assets, trust boundaries, threats, and mitigations",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": [
+    "security",
+    "threat-modeling",
+    "stride",
+    "architecture",
+    "risk"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "path": "skills/security/threat-model",
+    "branch": "main",
+    "url": "https://github.com/abhiunix/community-registry/tree/main/skills/security/threat-model"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "has_scripts": false,
+  "file_count": 2,
+  "license": "MIT"
+}

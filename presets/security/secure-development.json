@@ -1,0 +1,126 @@
+{
+  "name": "secure-development",
+  "display_name": "Secure Development",
+  "description": "Complete secure development preset bundling OWASP-aligned security rules, security-focused agents, and audit/review skills for building secure applications in any language",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": [
+    "security",
+    "owasp",
+    "secure-development",
+    "best-practices",
+    "preset"
+  ],
+  "rules": [
+    {
+      "name": "sql-injection-prevention",
+      "path": "security/sql-injection-prevention.json",
+      "required": true
+    },
+    {
+      "name": "xss-prevention",
+      "path": "security/xss-prevention.json",
+      "required": true
+    },
+    {
+      "name": "command-injection-prevention",
+      "path": "security/command-injection-prevention.json",
+      "required": true
+    },
+    {
+      "name": "authentication-best-practices",
+      "path": "security/authentication-best-practices.json",
+      "required": true
+    },
+    {
+      "name": "authorization-access-control",
+      "path": "security/authorization-access-control.json",
+      "required": true
+    },
+    {
+      "name": "no-secrets-in-code",
+      "path": "security/no-secrets-in-code.json",
+      "required": true
+    },
+    {
+      "name": "input-validation",
+      "path": "security/input-validation.json",
+      "required": true
+    },
+    {
+      "name": "cryptography-best-practices",
+      "path": "security/cryptography-best-practices.json",
+      "required": true
+    },
+    {
+      "name": "secure-error-handling",
+      "path": "security/secure-error-handling.json",
+      "required": true
+    },
+    {
+      "name": "secure-dependencies",
+      "path": "security/secure-dependencies.json",
+      "required": true
+    },
+    {
+      "name": "secure-file-handling",
+      "path": "security/secure-file-handling.json",
+      "required": true
+    },
+    {
+      "name": "secure-logging",
+      "path": "security/secure-logging.json",
+      "required": true
+    },
+    {
+      "name": "secure-api-design",
+      "path": "security/secure-api-design.json",
+      "required": true
+    }
+  ],
+  "agents": [
+    {
+      "name": "security-auditor",
+      "path": "security/security-auditor.json",
+      "description": "Full codebase security audit with severity ratings"
+    },
+    {
+      "name": "threat-modeler",
+      "path": "security/threat-modeler.json",
+      "description": "STRIDE-based threat modeling from architecture analysis"
+    },
+    {
+      "name": "dependency-scanner",
+      "path": "security/dependency-scanner.json",
+      "description": "Scan dependencies for vulnerabilities and supply chain risks"
+    }
+  ],
+  "skills": [
+    {
+      "name": "security-audit",
+      "path": "security/security-audit",
+      "description": "Run a comprehensive OWASP Top 10 security audit"
+    },
+    {
+      "name": "threat-model",
+      "path": "security/threat-model",
+      "description": "Generate STRIDE threat models from codebase analysis"
+    },
+    {
+      "name": "secure-code-review",
+      "path": "security/secure-code-review",
+      "description": "Security-focused code review for changes or specific files"
+    }
+  ],
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/presets/security/secure-development.json"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "license": "MIT"
+}

@@ -1,11 +1,12 @@
 {
-  "updated_at": "2026-03-17T01:11:07.352064+00:00",
+  "updated_at": "2026-03-23T00:00:00.000000+00:00",
   "categories": [
     "architecture",
     "code-review",
-    "development"
+    "development",
+    "security"
   ],
-  "total": 3,
+  "total": 6,
   "entries": [
     {
       "name": "fullstack-developer",
@@ -53,6 +54,36 @@
         "architecture"
       ],
       "path": "architecture/api-designer.json"
+    },
+    {
+      "name": "security-auditor",
+      "display_name": "Security Auditor",
+      "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10 with severity ratings and remediation guidance",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": ["security", "audit", "owasp", "vulnerabilities", "pentest"],
+      "path": "security/security-auditor.json"
+    },
+    {
+      "name": "threat-modeler",
+      "display_name": "Threat Modeler",
+      "description": "Analyzes system architecture to identify threats using STRIDE methodology with risk ratings and mitigations",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": ["security", "threat-modeling", "stride", "architecture", "risk-assessment"],
+      "path": "security/threat-modeler.json"
+    },
+    {
+      "name": "dependency-scanner",
+      "display_name": "Dependency Scanner",
+      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": ["security", "dependencies", "vulnerabilities", "supply-chain", "scanning"],
+      "path": "security/dependency-scanner.json"
     }
   ]
 }

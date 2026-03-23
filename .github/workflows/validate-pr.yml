@@ -43,17 +43,19 @@ jobs:
               'hooks': ['name', 'display_name', 'description', 'category'],
               'agents': ['name', 'display_name', 'description', 'category'],
               'skills': ['name', 'display_name', 'description', 'category'],
+              'presets': ['name', 'display_name', 'description', 'category'],
           }
 
           valid_categories = {
-              'skills': ['development', 'testing', 'devops', 'security', 'data', 'design', 'productivity', 'ai-ml', 'language', 'framework', 'integration', 'other'],
+              'skills': ['ai', 'communication', 'development', 'integration', 'media', 'productivity', 'security', 'testing', 'devops', 'data', 'design', 'ai-ml', 'language', 'framework', 'other'],
               'mcps': ['devtools', 'ai', 'communication', 'cloud', 'data', 'database', 'monitoring', 'other'],
               'rules': ['code-quality', 'security', 'style', 'performance', 'accessibility', 'other'],
               'hooks': ['testing', 'linting', 'deployment', 'git', 'other'],
-              'agents': ['code-review', 'architecture', 'testing', 'documentation', 'devops', 'development', 'other'],
+              'agents': ['code-review', 'architecture', 'security', 'testing', 'documentation', 'devops', 'development', 'other'],
+              'presets': ['security', 'development', 'devops', 'testing', 'other'],
           }
 
-          for type_dir in ['mcps', 'rules', 'hooks', 'agents', 'skills']:
+          for type_dir in ['mcps', 'rules', 'hooks', 'agents', 'skills', 'presets']:
               if not os.path.isdir(type_dir):
                   continue
               is_skill = (type_dir == 'skills')

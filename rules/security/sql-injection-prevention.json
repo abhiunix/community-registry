@@ -1,0 +1,31 @@
+{
+  "name": "sql-injection-prevention",
+  "display_name": "SQL Injection Prevention",
+  "description": "Prevent SQL injection by enforcing parameterized queries and banning string concatenation in database operations",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": [
+    "security",
+    "sql-injection",
+    "database",
+    "owasp"
+  ],
+  "compatible_adapters": [
+    "claude-code",
+    "cursor",
+    "windsurf"
+  ],
+  "scope": "project",
+  "content": "## SQL Injection Prevention\n\nNEVER build SQL queries by concatenating or interpolating user input. This is the #1 most exploited vulnerability class (OWASP A03:2021 Injection).\n\n### Rules\n- Always use parameterized queries / prepared statements for ALL database operations\n- Never use string concatenation, template literals, or f-strings to build SQL\n- Use your ORM's query builder — do not drop to raw SQL unless absolutely necessary\n- If raw SQL is required, use positional (`$1`, `?`) or named (`:param`) placeholders\n- Validate and cast types before passing to queries (e.g., ensure IDs are integers)\n- Apply least-privilege database permissions — app users should not have DDL rights\n- Use stored procedures with parameterized inputs for complex operations\n- Escape identifiers (table/column names) separately if they must be dynamic — they CANNOT go in parameter placeholders\n\n### Language Examples\n\n#### Python (any DB driver)\n```python\n# BAD — injectable\ncursor.execute(f\"SELECT * FROM users WHERE name = '{name}'\")\n\n# GOOD — parameterized\ncursor.execute(\"SELECT * FROM users WHERE name = %s\", (name,))\n```\n\n#### JavaScript / TypeScript\n```javascript\n// BAD — injectable\ndb.query(`SELECT * FROM users WHERE id = ${userId}`);\n\n// GOOD — parameterized\ndb.query('SELECT * FROM users WHERE id = $1', [userId]);\n```\n\n#### Java\n```java\n// BAD — injectable\nStatement stmt = conn.createStatement();\nstmt.executeQuery(\"SELECT * FROM users WHERE name = '\" + name + \"'\");\n\n// GOOD — parameterized\nPreparedStatement ps = conn.prepareStatement(\"SELECT * FROM users WHERE name = ?\");\nps.setString(1, name);\n```\n\n#### Go\n```go\n// BAD — injectable\ndb.Query(\"SELECT * FROM users WHERE name = '\" + name + \"'\")\n\n// GOOD — parameterized\ndb.Query(\"SELECT * FROM users WHERE name = $1\", name)\n```\n\n#### Ruby\n```ruby\n# BAD — injectable\nUser.where(\"name = '#{name}'\")\n\n# GOOD — parameterized\nUser.where(\"name = ?\", name)\nUser.where(name: name)\n```\n\n### ORM-Specific Traps\n- Django: `.extra()` and `.raw()` can still be injectable — parameterize them\n- SQLAlchemy: `text()` requires explicit `bindparams`\n- ActiveRecord: `.where(string)` is unsafe, `.where(string, params)` or `.where(hash)` is safe\n- Prisma: `$queryRawUnsafe` is injectable — use `$queryRaw` with tagged template\n- Sequelize: `sequelize.query(string)` needs `{ replacements }` or `{ bind }`",
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "url": "https://github.com/abhiunix/community-registry/blob/main/rules/security/sql-injection-prevention.json"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "license": "MIT"
+}

@@ -1,14 +1,15 @@
 {
-  "updated_at": "2026-03-17T01:11:07.352599+00:00",
+  "updated_at": "2026-03-24T00:00:00.000000+00:00",
   "skills": {
-    "total": 56,
+    "total": 60,
     "categories": [
       "ai",
       "communication",
       "development",
       "integration",
       "media",
-      "productivity"
+      "productivity",
+      "security"
     ],
     "top_stars": 317520
   },
@@ -20,7 +21,7 @@
     "top_stars": 15200
   },
   "rules": {
-    "total": 5,
+    "total": 16,
     "categories": [
       "code-quality",
       "performance",
@@ -39,11 +40,19 @@
     "top_stars": 0
   },
   "agents": {
-    "total": 3,
+    "total": 6,
     "categories": [
       "architecture",
       "code-review",
-      "development"
+      "development",
+      "security"
+    ],
+    "top_stars": 0
+  },
+  "presets": {
+    "total": 1,
+    "categories": [
+      "security"
     ],
     "top_stars": 0
   }

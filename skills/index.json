@@ -1,14 +1,15 @@
 {
-  "updated_at": "2026-03-17T01:11:07.332387+00:00",
+  "updated_at": "2026-03-23T00:00:00.000000+00:00",
   "categories": [
     "ai",
     "communication",
     "development",
     "integration",
     "media",
-    "productivity"
+    "productivity",
+    "security"
   ],
-  "total": 56,
+  "total": 60,
   "entries": [
     {
       "name": "model-usage",
@@ -414,6 +415,21 @@
         "hardware"
       ],
       "path": "ai/nano-banana-pro"
+    },
+    {
+      "name": "humanizer",
+      "display_name": "Humanizer",
+      "description": "Remove signs of AI-generated writing from text, making it sound natural and human-written",
+      "category": "ai",
+      "author_github": "blader",
+      "stars": 0,
+      "tags": [
+        "writing",
+        "editing",
+        "ai-detection",
+        "humanize"
+      ],
+      "path": "ai/humanizer"
     },
     {
       "name": "himalaya",
@@ -851,6 +867,36 @@
         "security"
       ],
       "path": "development/git-commit-reviewer"
+    },
+    {
+      "name": "security-audit",
+      "display_name": "Security Audit",
+      "description": "Comprehensive security audit of a codebase covering OWASP Top 10, secrets exposure, dependency vulnerabilities, and configuration issues",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": ["security", "audit", "owasp", "vulnerabilities", "code-review"],
+      "path": "security/security-audit"
+    },
+    {
+      "name": "threat-model",
+      "display_name": "Threat Model",
+      "description": "Generate STRIDE-based threat models from codebase analysis, identifying assets, trust boundaries, threats, and mitigations",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": ["security", "threat-modeling", "stride", "architecture", "risk"],
+      "path": "security/threat-model"
+    },
+    {
+      "name": "secure-code-review",
+      "display_name": "Secure Code Review",
+      "description": "Security-focused code review that checks for injection, auth flaws, crypto misuse, data exposure, and insecure patterns",
+      "category": "security",
+      "author_github": "",
+      "stars": 0,
+      "tags": ["security", "code-review", "vulnerabilities", "owasp", "static-analysis"],
+      "path": "security/secure-code-review"
     }
   ]
 }

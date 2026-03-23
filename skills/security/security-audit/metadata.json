@@ -1,0 +1,32 @@
+{
+  "name": "security-audit",
+  "display_name": "Security Audit",
+  "description": "Comprehensive security audit of a codebase covering OWASP Top 10, secrets exposure, dependency vulnerabilities, and configuration issues",
+  "category": "security",
+  "author": "community",
+  "author_github": "",
+  "version": "1.0.0",
+  "tags": [
+    "security",
+    "audit",
+    "owasp",
+    "vulnerabilities",
+    "code-review"
+  ],
+  "compatible_adapters": [
+    "claude-code"
+  ],
+  "source": {
+    "repo": "abhiunix/community-registry",
+    "path": "skills/security/security-audit",
+    "branch": "main",
+    "url": "https://github.com/abhiunix/community-registry/tree/main/skills/security/security-audit"
+  },
+  "stats": {
+    "github_stars": 0,
+    "updated_at": "2026-03-23"
+  },
+  "has_scripts": false,
+  "file_count": 2,
+  "license": "MIT"
+}
