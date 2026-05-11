@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T00:00:00.000000+00:00",
+  "updated_at": "2026-05-11T08:58:22.229304+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -9,20 +9,52 @@
   "total": 6,
   "entries": [
     {
-      "name": "fullstack-developer",
-      "display_name": "Full Stack Developer",
-      "description": "Comprehensive full-stack development agent for React frontends, Node.js backends, databases, and API integrations",
-      "category": "development",
+      "name": "threat-modeler",
+      "display_name": "Threat Modeler",
+      "description": "Analyzes system architecture to identify threats using STRIDE methodology, maps attack surfaces, and produces threat models with risk ratings and mitigations",
+      "category": "security",
       "author_github": "",
-      "stars": 0,
+      "stars": 1,
       "tags": [
-        "fullstack",
-        "react",
-        "nodejs",
-        "database",
-        "api"
+        "security",
+        "threat-modeling",
+        "stride",
+        "architecture",
+        "risk-assessment"
       ],
-      "path": "development/fullstack-developer.json"
+      "path": "security/threat-modeler.json"
+    },
+    {
+      "name": "dependency-scanner",
+      "display_name": "Dependency Scanner",
+      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "dependencies",
+        "vulnerabilities",
+        "supply-chain",
+        "scanning"
+      ],
+      "path": "security/dependency-scanner.json"
+    },
+    {
+      "name": "security-auditor",
+      "display_name": "Security Auditor",
+      "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10, identifies attack surfaces, and provides actionable remediation guidance with severity ratings",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "audit",
+        "owasp",
+        "vulnerabilities",
+        "pentest"
+      ],
+      "path": "security/security-auditor.json"
     },
     {
       "name": "code-reviewer",
@@ -56,34 +88,20 @@
       "path": "architecture/api-designer.json"
     },
     {
-      "name": "security-auditor",
-      "display_name": "Security Auditor",
-      "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10 with severity ratings and remediation guidance",
-      "category": "security",
+      "name": "fullstack-developer",
+      "display_name": "Full Stack Developer",
+      "description": "Comprehensive full-stack development agent for React frontends, Node.js backends, databases, and API integrations",
+      "category": "development",
       "author_github": "",
       "stars": 0,
-      "tags": ["security", "audit", "owasp", "vulnerabilities", "pentest"],
-      "path": "security/security-auditor.json"
-    },
-    {
-      "name": "threat-modeler",
-      "display_name": "Threat Modeler",
-      "description": "Analyzes system architecture to identify threats using STRIDE methodology with risk ratings and mitigations",
-      "category": "security",
-      "author_github": "",
-      "stars": 0,
-      "tags": ["security", "threat-modeling", "stride", "architecture", "risk-assessment"],
-      "path": "security/threat-modeler.json"
-    },
-    {
-      "name": "dependency-scanner",
-      "display_name": "Dependency Scanner",
-      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks",
-      "category": "security",
-      "author_github": "",
-      "stars": 0,
-      "tags": ["security", "dependencies", "vulnerabilities", "supply-chain", "scanning"],
-      "path": "security/dependency-scanner.json"
+      "tags": [
+        "fullstack",
+        "react",
+        "nodejs",
+        "database",
+        "api"
+      ],
+      "path": "development/fullstack-developer.json"
     }
   ]
 }

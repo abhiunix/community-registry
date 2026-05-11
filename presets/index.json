@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T00:00:00.000000+00:00",
+  "updated_at": "2026-05-11T08:58:22.229588+00:00",
   "categories": [
     "security"
   ],
@@ -8,11 +8,17 @@
     {
       "name": "secure-development",
       "display_name": "Secure Development",
-      "description": "Complete secure development preset bundling OWASP-aligned security rules, agents, and audit/review skills for any language",
+      "description": "Complete secure development preset bundling OWASP-aligned security rules, security-focused agents, and audit/review skills for building secure applications in any language",
       "category": "security",
       "author_github": "",
-      "stars": 0,
-      "tags": ["security", "owasp", "secure-development", "best-practices", "preset"],
+      "stars": 1,
+      "tags": [
+        "security",
+        "owasp",
+        "secure-development",
+        "best-practices",
+        "preset"
+      ],
       "path": "security/secure-development.json"
     }
   ]
