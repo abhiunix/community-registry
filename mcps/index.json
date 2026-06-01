@@ -1,25 +1,10 @@
 {
-  "updated_at": "2026-05-25T09:48:19.554827+00:00",
+  "updated_at": "2026-06-01T11:08:30.903272+00:00",
   "categories": [
     "devtools"
   ],
   "total": 2,
   "entries": [
-    {
-      "name": "github-mcp",
-      "display_name": "GitHub MCP Server",
-      "description": "Provides GitHub repository access, issues, PRs, and code search capabilities through the Model Context Protocol",
-      "category": "devtools",
-      "author_github": "modelcontextprotocol",
-      "stars": 1,
-      "tags": [
-        "github",
-        "vcs",
-        "devtools",
-        "code-search"
-      ],
-      "path": "devtools/github-mcp.json"
-    },
     {
       "name": "postgres-mcp",
       "display_name": "PostgreSQL MCP Server",
@@ -34,6 +19,21 @@
         "data"
       ],
       "path": "devtools/postgres-mcp.json"
+    },
+    {
+      "name": "github-mcp",
+      "display_name": "GitHub MCP Server",
+      "description": "Provides GitHub repository access, issues, PRs, and code search capabilities through the Model Context Protocol",
+      "category": "devtools",
+      "author_github": "modelcontextprotocol",
+      "stars": 1,
+      "tags": [
+        "github",
+        "vcs",
+        "devtools",
+        "code-search"
+      ],
+      "path": "devtools/github-mcp.json"
     }
   ]
 }

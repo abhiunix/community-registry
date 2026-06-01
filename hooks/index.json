@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T09:48:19.556399+00:00",
+  "updated_at": "2026-06-01T11:08:30.905167+00:00",
   "categories": [
     "git",
     "linting",
@@ -7,21 +7,6 @@
   ],
   "total": 3,
   "entries": [
-    {
-      "name": "auto-test-runner",
-      "display_name": "Auto Test Runner",
-      "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
-      "category": "testing",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "testing",
-        "automation",
-        "ci",
-        "development"
-      ],
-      "path": "testing/auto-test-runner.json"
-    },
     {
       "name": "pre-commit-check",
       "display_name": "Pre-Commit Type Check",
@@ -51,6 +36,21 @@
         "code-quality"
       ],
       "path": "linting/lint-on-save.json"
+    },
+    {
+      "name": "auto-test-runner",
+      "display_name": "Auto Test Runner",
+      "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
+      "category": "testing",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "testing",
+        "automation",
+        "ci",
+        "development"
+      ],
+      "path": "testing/auto-test-runner.json"
     }
   ]
 }

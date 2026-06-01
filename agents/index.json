@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T09:48:19.557728+00:00",
+  "updated_at": "2026-06-01T11:08:30.906444+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -8,6 +8,22 @@
   ],
   "total": 6,
   "entries": [
+    {
+      "name": "dependency-scanner",
+      "display_name": "Dependency Scanner",
+      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "dependencies",
+        "vulnerabilities",
+        "supply-chain",
+        "scanning"
+      ],
+      "path": "security/dependency-scanner.json"
+    },
     {
       "name": "threat-modeler",
       "display_name": "Threat Modeler",
@@ -41,36 +57,19 @@
       "path": "security/security-auditor.json"
     },
     {
-      "name": "dependency-scanner",
-      "display_name": "Dependency Scanner",
-      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "dependencies",
-        "vulnerabilities",
-        "supply-chain",
-        "scanning"
-      ],
-      "path": "security/dependency-scanner.json"
-    },
-    {
-      "name": "fullstack-developer",
-      "display_name": "Full Stack Developer",
-      "description": "Comprehensive full-stack development agent for React frontends, Node.js backends, databases, and API integrations",
-      "category": "development",
+      "name": "code-reviewer",
+      "display_name": "Code Reviewer",
+      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
+      "category": "code-review",
       "author_github": "",
       "stars": 0,
       "tags": [
-        "fullstack",
-        "react",
-        "nodejs",
-        "database",
-        "api"
+        "code-review",
+        "quality",
+        "security",
+        "best-practices"
       ],
-      "path": "development/fullstack-developer.json"
+      "path": "code-review/code-reviewer.json"
     },
     {
       "name": "api-designer",
@@ -89,19 +88,20 @@
       "path": "architecture/api-designer.json"
     },
     {
-      "name": "code-reviewer",
-      "display_name": "Code Reviewer",
-      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
-      "category": "code-review",
+      "name": "fullstack-developer",
+      "display_name": "Full Stack Developer",
+      "description": "Comprehensive full-stack development agent for React frontends, Node.js backends, databases, and API integrations",
+      "category": "development",
       "author_github": "",
       "stars": 0,
       "tags": [
-        "code-review",
-        "quality",
-        "security",
-        "best-practices"
+        "fullstack",
+        "react",
+        "nodejs",
+        "database",
+        "api"
       ],
-      "path": "code-review/code-reviewer.json"
+      "path": "development/fullstack-developer.json"
     }
   ]
 }
