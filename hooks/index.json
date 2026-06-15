@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T10:17:00.774551+00:00",
+  "updated_at": "2026-06-15T11:45:31.015182+00:00",
   "categories": [
     "git",
     "linting",
@@ -7,21 +7,6 @@
   ],
   "total": 3,
   "entries": [
-    {
-      "name": "pre-commit-check",
-      "display_name": "Pre-Commit Type Check",
-      "description": "Runs TypeScript type checking before each commit to catch type errors early",
-      "category": "git",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "git",
-        "typescript",
-        "type-checking",
-        "pre-commit"
-      ],
-      "path": "git/pre-commit-check.json"
-    },
     {
       "name": "lint-on-save",
       "display_name": "Lint on Save",
@@ -51,6 +36,21 @@
         "development"
       ],
       "path": "testing/auto-test-runner.json"
+    },
+    {
+      "name": "pre-commit-check",
+      "display_name": "Pre-Commit Type Check",
+      "description": "Runs TypeScript type checking before each commit to catch type errors early",
+      "category": "git",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "git",
+        "typescript",
+        "type-checking",
+        "pre-commit"
+      ],
+      "path": "git/pre-commit-check.json"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T10:17:00.775839+00:00",
+  "updated_at": "2026-06-15T11:45:31.016462+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -57,21 +57,6 @@
       "path": "security/security-auditor.json"
     },
     {
-      "name": "code-reviewer",
-      "display_name": "Code Reviewer",
-      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
-      "category": "code-review",
-      "author_github": "",
-      "stars": 0,
-      "tags": [
-        "code-review",
-        "quality",
-        "security",
-        "best-practices"
-      ],
-      "path": "code-review/code-reviewer.json"
-    },
-    {
       "name": "api-designer",
       "display_name": "API Designer",
       "description": "Expert API architect designing RESTful and GraphQL APIs following industry best practices and standards",
@@ -86,6 +71,21 @@
         "architecture"
       ],
       "path": "architecture/api-designer.json"
+    },
+    {
+      "name": "code-reviewer",
+      "display_name": "Code Reviewer",
+      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
+      "category": "code-review",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "code-review",
+        "quality",
+        "security",
+        "best-practices"
+      ],
+      "path": "code-review/code-reviewer.json"
     },
     {
       "name": "fullstack-developer",

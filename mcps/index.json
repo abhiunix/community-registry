@@ -1,25 +1,10 @@
 {
-  "updated_at": "2026-06-08T10:17:00.773275+00:00",
+  "updated_at": "2026-06-15T11:45:31.013609+00:00",
   "categories": [
     "devtools"
   ],
   "total": 2,
   "entries": [
-    {
-      "name": "postgres-mcp",
-      "display_name": "PostgreSQL MCP Server",
-      "description": "Provides PostgreSQL database access for queries, schema inspection, and data operations",
-      "category": "devtools",
-      "author_github": "modelcontextprotocol",
-      "stars": 1,
-      "tags": [
-        "database",
-        "postgres",
-        "sql",
-        "data"
-      ],
-      "path": "devtools/postgres-mcp.json"
-    },
     {
       "name": "github-mcp",
       "display_name": "GitHub MCP Server",
@@ -34,6 +19,21 @@
         "code-search"
       ],
       "path": "devtools/github-mcp.json"
+    },
+    {
+      "name": "postgres-mcp",
+      "display_name": "PostgreSQL MCP Server",
+      "description": "Provides PostgreSQL database access for queries, schema inspection, and data operations",
+      "category": "devtools",
+      "author_github": "modelcontextprotocol",
+      "stars": 1,
+      "tags": [
+        "database",
+        "postgres",
+        "sql",
+        "data"
+      ],
+      "path": "devtools/postgres-mcp.json"
     }
   ]
 }
