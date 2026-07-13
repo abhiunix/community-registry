@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T09:55:32.521593+00:00",
+  "updated_at": "2026-07-13T08:48:22.628063+00:00",
   "categories": [
     "ai",
     "communication",
@@ -17,7 +17,7 @@
       "description": "Manage Apple Notes \u2014 create, search, list, and organize notes",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "apple",
         "notes",
@@ -32,7 +32,7 @@
       "description": "Summarize text, articles, and documents",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "summarize",
         "text",
@@ -47,7 +47,7 @@
       "description": "Interact with Notion pages, databases, and workspaces",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "notion",
         "productivity",
@@ -62,7 +62,7 @@
       "description": "Manage Obsidian vault \u2014 create, search, and link notes",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "obsidian",
         "notes",
@@ -77,7 +77,7 @@
       "description": "Manage Trello boards, lists, and cards",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "trello",
         "kanban",
@@ -92,7 +92,7 @@
       "description": "Create visual diagrams and drawings",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "canvas",
         "diagrams",
@@ -107,7 +107,7 @@
       "description": "Manage Things 3 tasks on macOS \u2014 create, complete, organize",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "things",
         "tasks",
@@ -122,7 +122,7 @@
       "description": "Manage Bear notes \u2014 create, search, tag, and organize",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "bear",
         "notes",
@@ -137,7 +137,7 @@
       "description": "Manage Apple Reminders \u2014 create, complete, and list reminders",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "apple",
         "reminders",
@@ -152,7 +152,7 @@
       "description": "Process and analyze PDF documents with AI",
       "category": "ai",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "pdf",
         "analysis",
@@ -167,7 +167,7 @@
       "description": "Run local AI inference on Banana Pro hardware",
       "category": "ai",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "local-ai",
         "inference",
@@ -182,7 +182,7 @@
       "description": "Interact with Google Gemini AI models",
       "category": "ai",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "gemini",
         "google",
@@ -197,7 +197,7 @@
       "description": "Send and manage Discord messages and channels",
       "category": "communication",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "discord",
         "messaging",
@@ -212,7 +212,7 @@
       "description": "Send and read iMessages on macOS",
       "category": "communication",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "imessage",
         "messaging",
@@ -227,7 +227,7 @@
       "description": "CLI email client \u2014 read, send, and manage emails",
       "category": "communication",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "email",
         "cli",
@@ -242,7 +242,7 @@
       "description": "Send and manage Slack messages, channels, and threads",
       "category": "communication",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "slack",
         "messaging",
@@ -257,7 +257,7 @@
       "description": "Send and receive iMessages via BlueBubbles server",
       "category": "communication",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "imessage",
         "bluebubbles",
@@ -272,7 +272,7 @@
       "description": "Make voice calls and manage call sessions",
       "category": "communication",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "voice",
         "calls",
@@ -287,7 +287,7 @@
       "description": "Search and browse GOG.com game library",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "gog",
         "gaming",
@@ -302,7 +302,7 @@
       "description": "Search and grep across multiple sources",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "search",
         "grep",
@@ -317,7 +317,7 @@
       "description": "Extract and manage URLs from text",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "urls",
         "extraction",
@@ -332,7 +332,7 @@
       "description": "Access 1Password vault items and secrets",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "1password",
         "secrets",
@@ -347,7 +347,7 @@
       "description": "Query and interact with Oracle databases",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "oracle",
         "database",
@@ -362,7 +362,7 @@
       "description": "Monitor service health and uptime",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "monitoring",
         "health",
@@ -377,7 +377,7 @@
       "description": "Browse and install OpenClaw skills from the hub",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "openclaw",
         "hub",
@@ -392,7 +392,7 @@
       "description": "Control Eight Sleep smart mattress",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "eight-sleep",
         "smart-home",
@@ -407,7 +407,7 @@
       "description": "Search and navigate places using maps",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "maps",
         "places",
@@ -422,7 +422,7 @@
       "description": "Control Philips Hue smart lights",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "hue",
         "smart-lights",
@@ -437,7 +437,7 @@
       "description": "Get weather forecasts and current conditions",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "weather",
         "forecast",
@@ -452,7 +452,7 @@
       "description": "Track packages and delivery orders",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "packages",
         "tracking",
@@ -467,7 +467,7 @@
       "description": "Control Bluetooth devices from the command line",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "bluetooth",
         "cli",
@@ -482,7 +482,7 @@
       "description": "WhatsApp messaging from the command line",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "whatsapp",
         "messaging",
@@ -497,7 +497,7 @@
       "description": "Monitor blogs and RSS feeds for new content",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "blogs",
         "rss",
@@ -512,7 +512,7 @@
       "description": "Interact with GitHub repositories, PRs, and workflows",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "github",
         "git",
@@ -527,7 +527,7 @@
       "description": "Create new OpenClaw skills with proper structure",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "openclaw",
         "skills",
@@ -542,7 +542,7 @@
       "description": "Manage tmux sessions, windows, and panes",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "tmux",
         "terminal",
@@ -557,7 +557,7 @@
       "description": "View and manage AI session logs",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "logs",
         "sessions",
@@ -572,7 +572,7 @@
       "description": "Port and convert MCP servers",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "mcp",
         "porting",
@@ -587,7 +587,7 @@
       "description": "Track and display AI model token usage",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "tokens",
         "usage",
@@ -602,7 +602,7 @@
       "description": "Connect to and manage Node.js processes",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "nodejs",
         "process",
@@ -617,7 +617,7 @@
       "description": "Autonomous coding agent for complex development tasks",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "coding",
         "agent",
@@ -632,7 +632,7 @@
       "description": "Manage GitHub issues \u2014 create, list, comment, close",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "github",
         "issues",
@@ -647,7 +647,7 @@
       "description": "Identify songs playing nearby using audio recognition",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "music",
         "recognition",
@@ -662,7 +662,7 @@
       "description": "Control Spotify playback \u2014 play, pause, search, queue",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "spotify",
         "music",
@@ -677,7 +677,7 @@
       "description": "Extract frames from video files",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "video",
         "frames",
@@ -692,7 +692,7 @@
       "description": "Text-to-speech using Sherpa ONNX models",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "tts",
         "text-to-speech",
@@ -707,7 +707,7 @@
       "description": "Transcribe audio using local OpenAI Whisper model",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "whisper",
         "transcription",
@@ -722,7 +722,7 @@
       "description": "Screen capture and screenshot utility",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "screenshot",
         "screen-capture",
@@ -737,7 +737,7 @@
       "description": "Control Sonos speakers \u2014 play, pause, volume",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "sonos",
         "speakers",
@@ -752,7 +752,7 @@
       "description": "Generate images using OpenAI DALL-E API",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "openai",
         "dalle",
@@ -767,7 +767,7 @@
       "description": "Capture photos and screenshots from camera",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "camera",
         "photos",
@@ -782,7 +782,7 @@
       "description": "Search and find GIFs",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "gif",
         "search",
@@ -797,7 +797,7 @@
       "description": "Transcribe audio using OpenAI Whisper API",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 381893,
+      "stars": 382754,
       "tags": [
         "whisper",
         "transcription",
@@ -812,7 +812,7 @@
       "description": "Remove signs of AI-generated writing from text, making it sound natural and human-written",
       "category": "ai",
       "author_github": "blader",
-      "stars": 27684,
+      "stars": 28950,
       "tags": [
         "writing",
         "editing",
