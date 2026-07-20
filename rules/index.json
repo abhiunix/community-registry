@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T08:48:22.630108+00:00",
+  "updated_at": "2026-07-20T08:40:21.288625+00:00",
   "categories": [
     "code-quality",
     "performance",
@@ -8,21 +8,6 @@
   ],
   "total": 16,
   "entries": [
-    {
-      "name": "no-n-plus-one",
-      "display_name": "No N+1 Queries",
-      "description": "Detect and prevent N+1 query patterns in database access code",
-      "category": "performance",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "performance",
-        "database",
-        "queries",
-        "optimization"
-      ],
-      "path": "performance/no-n-plus-one.json"
-    },
     {
       "name": "general-code-review",
       "display_name": "General Code Review Checklist",
@@ -36,6 +21,53 @@
         "checklist"
       ],
       "path": "code-quality/general-code-review.json"
+    },
+    {
+      "name": "xss-prevention",
+      "display_name": "XSS Prevention",
+      "description": "Prevent cross-site scripting by enforcing output encoding, CSP headers, and safe DOM manipulation",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "xss",
+        "frontend",
+        "owasp"
+      ],
+      "path": "security/xss-prevention.json"
+    },
+    {
+      "name": "secure-dependencies",
+      "display_name": "Secure Dependencies",
+      "description": "Manage third-party dependencies securely: pin versions, audit for vulnerabilities, and minimize attack surface",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "dependencies",
+        "supply-chain",
+        "vulnerabilities",
+        "owasp"
+      ],
+      "path": "security/secure-dependencies.json"
+    },
+    {
+      "name": "authorization-access-control",
+      "display_name": "Authorization & Access Control",
+      "description": "Enforce proper authorization checks, role-based access control, and principle of least privilege across all endpoints",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "authorization",
+        "rbac",
+        "access-control",
+        "owasp"
+      ],
+      "path": "security/authorization-access-control.json"
     },
     {
       "name": "sql-injection-prevention",
@@ -67,99 +99,6 @@
         "owasp"
       ],
       "path": "security/command-injection-prevention.json"
-    },
-    {
-      "name": "secure-api-design",
-      "display_name": "Secure API Design",
-      "description": "Design APIs securely with rate limiting, proper CORS, request validation, and protection against common API attacks",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "api",
-        "cors",
-        "rate-limiting",
-        "owasp"
-      ],
-      "path": "security/secure-api-design.json"
-    },
-    {
-      "name": "no-secrets-in-code",
-      "display_name": "No Secrets in Code",
-      "description": "Prevent hardcoded secrets, API keys, tokens, and passwords from being committed to the codebase",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "secrets",
-        "api-keys",
-        "best-practices"
-      ],
-      "path": "security/no-secrets-in-code.json"
-    },
-    {
-      "name": "secure-file-handling",
-      "display_name": "Secure File Handling",
-      "description": "Handle file uploads, downloads, and path operations securely to prevent path traversal, arbitrary file access, and malicious uploads",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "file-upload",
-        "path-traversal",
-        "file-handling"
-      ],
-      "path": "security/secure-file-handling.json"
-    },
-    {
-      "name": "xss-prevention",
-      "display_name": "XSS Prevention",
-      "description": "Prevent cross-site scripting by enforcing output encoding, CSP headers, and safe DOM manipulation",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "xss",
-        "frontend",
-        "owasp"
-      ],
-      "path": "security/xss-prevention.json"
-    },
-    {
-      "name": "input-validation",
-      "display_name": "Input Validation",
-      "description": "Always validate and sanitize user input at system boundaries to prevent injection attacks",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "validation",
-        "injection",
-        "xss",
-        "sql-injection"
-      ],
-      "path": "security/input-validation.json"
-    },
-    {
-      "name": "secure-dependencies",
-      "display_name": "Secure Dependencies",
-      "description": "Manage third-party dependencies securely: pin versions, audit for vulnerabilities, and minimize attack surface",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "dependencies",
-        "supply-chain",
-        "vulnerabilities",
-        "owasp"
-      ],
-      "path": "security/secure-dependencies.json"
     },
     {
       "name": "secure-logging",
@@ -194,36 +133,36 @@
       "path": "security/authentication-best-practices.json"
     },
     {
-      "name": "secure-error-handling",
-      "display_name": "Secure Error Handling",
-      "description": "Handle errors securely without leaking stack traces, internal paths, database details, or system information to users",
+      "name": "secure-api-design",
+      "display_name": "Secure API Design",
+      "description": "Design APIs securely with rate limiting, proper CORS, request validation, and protection against common API attacks",
       "category": "security",
       "author_github": "",
       "stars": 1,
       "tags": [
         "security",
-        "error-handling",
-        "information-disclosure",
-        "logging",
+        "api",
+        "cors",
+        "rate-limiting",
         "owasp"
       ],
-      "path": "security/secure-error-handling.json"
+      "path": "security/secure-api-design.json"
     },
     {
-      "name": "authorization-access-control",
-      "display_name": "Authorization & Access Control",
-      "description": "Enforce proper authorization checks, role-based access control, and principle of least privilege across all endpoints",
+      "name": "input-validation",
+      "display_name": "Input Validation",
+      "description": "Always validate and sanitize user input at system boundaries to prevent injection attacks",
       "category": "security",
       "author_github": "",
       "stars": 1,
       "tags": [
         "security",
-        "authorization",
-        "rbac",
-        "access-control",
-        "owasp"
+        "validation",
+        "injection",
+        "xss",
+        "sql-injection"
       ],
-      "path": "security/authorization-access-control.json"
+      "path": "security/input-validation.json"
     },
     {
       "name": "cryptography-best-practices",
@@ -240,6 +179,67 @@
         "owasp"
       ],
       "path": "security/cryptography-best-practices.json"
+    },
+    {
+      "name": "secure-error-handling",
+      "display_name": "Secure Error Handling",
+      "description": "Handle errors securely without leaking stack traces, internal paths, database details, or system information to users",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "error-handling",
+        "information-disclosure",
+        "logging",
+        "owasp"
+      ],
+      "path": "security/secure-error-handling.json"
+    },
+    {
+      "name": "no-secrets-in-code",
+      "display_name": "No Secrets in Code",
+      "description": "Prevent hardcoded secrets, API keys, tokens, and passwords from being committed to the codebase",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "secrets",
+        "api-keys",
+        "best-practices"
+      ],
+      "path": "security/no-secrets-in-code.json"
+    },
+    {
+      "name": "secure-file-handling",
+      "display_name": "Secure File Handling",
+      "description": "Handle file uploads, downloads, and path operations securely to prevent path traversal, arbitrary file access, and malicious uploads",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "file-upload",
+        "path-traversal",
+        "file-handling"
+      ],
+      "path": "security/secure-file-handling.json"
+    },
+    {
+      "name": "no-n-plus-one",
+      "display_name": "No N+1 Queries",
+      "description": "Detect and prevent N+1 query patterns in database access code",
+      "category": "performance",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "performance",
+        "database",
+        "queries",
+        "optimization"
+      ],
+      "path": "performance/no-n-plus-one.json"
     },
     {
       "name": "consistent-naming",

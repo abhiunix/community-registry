@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T08:48:22.631792+00:00",
+  "updated_at": "2026-07-20T08:40:21.290690+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -25,22 +25,6 @@
       "path": "security/dependency-scanner.json"
     },
     {
-      "name": "threat-modeler",
-      "display_name": "Threat Modeler",
-      "description": "Analyzes system architecture to identify threats using STRIDE methodology, maps attack surfaces, and produces threat models with risk ratings and mitigations",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "threat-modeling",
-        "stride",
-        "architecture",
-        "risk-assessment"
-      ],
-      "path": "security/threat-modeler.json"
-    },
-    {
       "name": "security-auditor",
       "display_name": "Security Auditor",
       "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10, identifies attack surfaces, and provides actionable remediation guidance with severity ratings",
@@ -55,6 +39,22 @@
         "pentest"
       ],
       "path": "security/security-auditor.json"
+    },
+    {
+      "name": "threat-modeler",
+      "display_name": "Threat Modeler",
+      "description": "Analyzes system architecture to identify threats using STRIDE methodology, maps attack surfaces, and produces threat models with risk ratings and mitigations",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "threat-modeling",
+        "stride",
+        "architecture",
+        "risk-assessment"
+      ],
+      "path": "security/threat-modeler.json"
     },
     {
       "name": "api-designer",

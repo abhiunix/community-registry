@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T08:48:22.630652+00:00",
+  "updated_at": "2026-07-20T08:40:21.289235+00:00",
   "categories": [
     "git",
     "linting",
@@ -7,21 +7,6 @@
   ],
   "total": 3,
   "entries": [
-    {
-      "name": "lint-on-save",
-      "display_name": "Lint on Save",
-      "description": "Automatically runs ESLint on saved files to catch issues immediately",
-      "category": "linting",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "linting",
-        "eslint",
-        "automation",
-        "code-quality"
-      ],
-      "path": "linting/lint-on-save.json"
-    },
     {
       "name": "auto-test-runner",
       "display_name": "Auto Test Runner",
@@ -51,6 +36,21 @@
         "pre-commit"
       ],
       "path": "git/pre-commit-check.json"
+    },
+    {
+      "name": "lint-on-save",
+      "display_name": "Lint on Save",
+      "description": "Automatically runs ESLint on saved files to catch issues immediately",
+      "category": "linting",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "linting",
+        "eslint",
+        "automation",
+        "code-quality"
+      ],
+      "path": "linting/lint-on-save.json"
     }
   ]
 }
