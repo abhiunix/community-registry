@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T07:09:53.652389+00:00",
+  "updated_at": "2026-08-17T06:33:30.141590+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -8,22 +8,6 @@
   ],
   "total": 6,
   "entries": [
-    {
-      "name": "threat-modeler",
-      "display_name": "Threat Modeler",
-      "description": "Analyzes system architecture to identify threats using STRIDE methodology, maps attack surfaces, and produces threat models with risk ratings and mitigations",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "threat-modeling",
-        "stride",
-        "architecture",
-        "risk-assessment"
-      ],
-      "path": "security/threat-modeler.json"
-    },
     {
       "name": "security-auditor",
       "display_name": "Security Auditor",
@@ -39,6 +23,22 @@
         "pentest"
       ],
       "path": "security/security-auditor.json"
+    },
+    {
+      "name": "threat-modeler",
+      "display_name": "Threat Modeler",
+      "description": "Analyzes system architecture to identify threats using STRIDE methodology, maps attack surfaces, and produces threat models with risk ratings and mitigations",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "threat-modeling",
+        "stride",
+        "architecture",
+        "risk-assessment"
+      ],
+      "path": "security/threat-modeler.json"
     },
     {
       "name": "dependency-scanner",
@@ -73,6 +73,21 @@
       "path": "development/fullstack-developer.json"
     },
     {
+      "name": "code-reviewer",
+      "display_name": "Code Reviewer",
+      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
+      "category": "code-review",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "code-review",
+        "quality",
+        "security",
+        "best-practices"
+      ],
+      "path": "code-review/code-reviewer.json"
+    },
+    {
       "name": "api-designer",
       "display_name": "API Designer",
       "description": "Expert API architect designing RESTful and GraphQL APIs following industry best practices and standards",
@@ -87,21 +102,6 @@
         "architecture"
       ],
       "path": "architecture/api-designer.json"
-    },
-    {
-      "name": "code-reviewer",
-      "display_name": "Code Reviewer",
-      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
-      "category": "code-review",
-      "author_github": "",
-      "stars": 0,
-      "tags": [
-        "code-review",
-        "quality",
-        "security",
-        "best-practices"
-      ],
-      "path": "code-review/code-reviewer.json"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T07:09:53.649064+00:00",
+  "updated_at": "2026-08-17T06:33:30.137627+00:00",
   "categories": [
     "ai",
     "communication",
@@ -12,72 +12,12 @@
   "total": 60,
   "entries": [
     {
-      "name": "things-mac",
-      "display_name": "Things 3",
-      "description": "Manage Things 3 tasks on macOS \u2014 create, complete, organize",
-      "category": "productivity",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "things",
-        "tasks",
-        "macos",
-        "gtd"
-      ],
-      "path": "productivity/things-mac"
-    },
-    {
-      "name": "apple-notes",
-      "display_name": "Apple Notes",
-      "description": "Manage Apple Notes \u2014 create, search, list, and organize notes",
-      "category": "productivity",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "apple",
-        "notes",
-        "macos",
-        "productivity"
-      ],
-      "path": "productivity/apple-notes"
-    },
-    {
-      "name": "bear-notes",
-      "display_name": "Bear Notes",
-      "description": "Manage Bear notes \u2014 create, search, tag, and organize",
-      "category": "productivity",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "bear",
-        "notes",
-        "markdown",
-        "macos"
-      ],
-      "path": "productivity/bear-notes"
-    },
-    {
-      "name": "canvas",
-      "display_name": "Canvas",
-      "description": "Create visual diagrams and drawings",
-      "category": "productivity",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "canvas",
-        "diagrams",
-        "visual",
-        "drawing"
-      ],
-      "path": "productivity/canvas"
-    },
-    {
       "name": "trello",
       "display_name": "Trello",
       "description": "Manage Trello boards, lists, and cards",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "trello",
         "kanban",
@@ -87,27 +27,12 @@
       "path": "productivity/trello"
     },
     {
-      "name": "obsidian",
-      "display_name": "Obsidian",
-      "description": "Manage Obsidian vault \u2014 create, search, and link notes",
-      "category": "productivity",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "obsidian",
-        "notes",
-        "markdown",
-        "knowledge-base"
-      ],
-      "path": "productivity/obsidian"
-    },
-    {
       "name": "notion",
       "display_name": "Notion",
       "description": "Interact with Notion pages, databases, and workspaces",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "notion",
         "productivity",
@@ -117,19 +42,19 @@
       "path": "productivity/notion"
     },
     {
-      "name": "summarize",
-      "display_name": "Summarize",
-      "description": "Summarize text, articles, and documents",
+      "name": "things-mac",
+      "display_name": "Things 3",
+      "description": "Manage Things 3 tasks on macOS \u2014 create, complete, organize",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "summarize",
-        "text",
-        "articles",
-        "tldr"
+        "things",
+        "tasks",
+        "macos",
+        "gtd"
       ],
-      "path": "productivity/summarize"
+      "path": "productivity/things-mac"
     },
     {
       "name": "apple-reminders",
@@ -137,7 +62,7 @@
       "description": "Manage Apple Reminders \u2014 create, complete, and list reminders",
       "category": "productivity",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "apple",
         "reminders",
@@ -147,34 +72,169 @@
       "path": "productivity/apple-reminders"
     },
     {
-      "name": "coding-agent",
-      "display_name": "Coding Agent",
-      "description": "Autonomous coding agent for complex development tasks",
-      "category": "development",
+      "name": "obsidian",
+      "display_name": "Obsidian",
+      "description": "Manage Obsidian vault \u2014 create, search, and link notes",
+      "category": "productivity",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "coding",
-        "agent",
-        "autonomous",
-        "development"
+        "obsidian",
+        "notes",
+        "markdown",
+        "knowledge-base"
       ],
-      "path": "development/coding-agent"
+      "path": "productivity/obsidian"
     },
     {
-      "name": "session-logs",
-      "display_name": "Session Logs",
-      "description": "View and manage AI session logs",
-      "category": "development",
+      "name": "canvas",
+      "display_name": "Canvas",
+      "description": "Create visual diagrams and drawings",
+      "category": "productivity",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "logs",
-        "sessions",
-        "debugging",
-        "history"
+        "canvas",
+        "diagrams",
+        "visual",
+        "drawing"
       ],
-      "path": "development/session-logs"
+      "path": "productivity/canvas"
+    },
+    {
+      "name": "bear-notes",
+      "display_name": "Bear Notes",
+      "description": "Manage Bear notes \u2014 create, search, tag, and organize",
+      "category": "productivity",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "bear",
+        "notes",
+        "markdown",
+        "macos"
+      ],
+      "path": "productivity/bear-notes"
+    },
+    {
+      "name": "apple-notes",
+      "display_name": "Apple Notes",
+      "description": "Manage Apple Notes \u2014 create, search, list, and organize notes",
+      "category": "productivity",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "apple",
+        "notes",
+        "macos",
+        "productivity"
+      ],
+      "path": "productivity/apple-notes"
+    },
+    {
+      "name": "summarize",
+      "display_name": "Summarize",
+      "description": "Summarize text, articles, and documents",
+      "category": "productivity",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "summarize",
+        "text",
+        "articles",
+        "tldr"
+      ],
+      "path": "productivity/summarize"
+    },
+    {
+      "name": "imsg",
+      "display_name": "iMessage",
+      "description": "Send and read iMessages on macOS",
+      "category": "communication",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "imessage",
+        "messaging",
+        "macos",
+        "sms"
+      ],
+      "path": "communication/imsg"
+    },
+    {
+      "name": "himalaya",
+      "display_name": "Himalaya",
+      "description": "CLI email client \u2014 read, send, and manage emails",
+      "category": "communication",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "email",
+        "cli",
+        "imap",
+        "smtp"
+      ],
+      "path": "communication/himalaya"
+    },
+    {
+      "name": "voice-call",
+      "display_name": "Voice Call",
+      "description": "Make voice calls and manage call sessions",
+      "category": "communication",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "voice",
+        "calls",
+        "telephony",
+        "audio"
+      ],
+      "path": "communication/voice-call"
+    },
+    {
+      "name": "discord",
+      "display_name": "Discord",
+      "description": "Send and manage Discord messages and channels",
+      "category": "communication",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "discord",
+        "messaging",
+        "chat",
+        "communities"
+      ],
+      "path": "communication/discord"
+    },
+    {
+      "name": "slack",
+      "display_name": "Slack",
+      "description": "Send and manage Slack messages, channels, and threads",
+      "category": "communication",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "slack",
+        "messaging",
+        "workplace",
+        "chat"
+      ],
+      "path": "communication/slack"
+    },
+    {
+      "name": "bluebubbles",
+      "display_name": "BlueBubbles",
+      "description": "Send and receive iMessages via BlueBubbles server",
+      "category": "communication",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "imessage",
+        "bluebubbles",
+        "messaging",
+        "macos"
+      ],
+      "path": "communication/bluebubbles"
     },
     {
       "name": "skill-creator",
@@ -182,7 +242,7 @@
       "description": "Create new OpenClaw skills with proper structure",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "openclaw",
         "skills",
@@ -192,87 +252,12 @@
       "path": "development/skill-creator"
     },
     {
-      "name": "github",
-      "display_name": "GitHub",
-      "description": "Interact with GitHub repositories, PRs, and workflows",
-      "category": "development",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "github",
-        "git",
-        "repositories",
-        "pull-requests"
-      ],
-      "path": "development/github"
-    },
-    {
-      "name": "model-usage",
-      "display_name": "Model Usage",
-      "description": "Track and display AI model token usage",
-      "category": "development",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "tokens",
-        "usage",
-        "tracking",
-        "costs"
-      ],
-      "path": "development/model-usage"
-    },
-    {
-      "name": "gh-issues",
-      "display_name": "GitHub Issues",
-      "description": "Manage GitHub issues \u2014 create, list, comment, close",
-      "category": "development",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "github",
-        "issues",
-        "bug-tracking",
-        "project-management"
-      ],
-      "path": "development/gh-issues"
-    },
-    {
-      "name": "tmux",
-      "display_name": "Tmux",
-      "description": "Manage tmux sessions, windows, and panes",
-      "category": "development",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "tmux",
-        "terminal",
-        "multiplexer",
-        "sessions"
-      ],
-      "path": "development/tmux"
-    },
-    {
-      "name": "mcporter",
-      "display_name": "MCP Porter",
-      "description": "Port and convert MCP servers",
-      "category": "development",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "mcp",
-        "porting",
-        "conversion",
-        "servers"
-      ],
-      "path": "development/mcporter"
-    },
-    {
       "name": "node-connect",
       "display_name": "Node Connect",
       "description": "Connect to and manage Node.js processes",
       "category": "development",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "nodejs",
         "process",
@@ -282,94 +267,124 @@
       "path": "development/node-connect"
     },
     {
-      "name": "weather",
-      "display_name": "Weather",
-      "description": "Get weather forecasts and current conditions",
-      "category": "integration",
+      "name": "coding-agent",
+      "display_name": "Coding Agent",
+      "description": "Autonomous coding agent for complex development tasks",
+      "category": "development",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "weather",
-        "forecast",
-        "conditions",
-        "climate"
+        "coding",
+        "agent",
+        "autonomous",
+        "development"
       ],
-      "path": "integration/weather"
+      "path": "development/coding-agent"
     },
     {
-      "name": "sag",
-      "display_name": "SAG",
-      "description": "Search and grep across multiple sources",
-      "category": "integration",
+      "name": "model-usage",
+      "display_name": "Model Usage",
+      "description": "Track and display AI model token usage",
+      "category": "development",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "search",
-        "grep",
-        "multi-source",
-        "aggregation"
-      ],
-      "path": "integration/sag"
-    },
-    {
-      "name": "gog",
-      "display_name": "GOG",
-      "description": "Search and browse GOG.com game library",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "gog",
-        "gaming",
-        "library",
-        "drm-free"
-      ],
-      "path": "integration/gog"
-    },
-    {
-      "name": "xurl",
-      "display_name": "XURL",
-      "description": "Extract and manage URLs from text",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "urls",
-        "extraction",
-        "text",
-        "links"
-      ],
-      "path": "integration/xurl"
-    },
-    {
-      "name": "clawhub",
-      "display_name": "ClawHub",
-      "description": "Browse and install OpenClaw skills from the hub",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "openclaw",
-        "hub",
-        "skills",
-        "marketplace"
-      ],
-      "path": "integration/clawhub"
-    },
-    {
-      "name": "ordercli",
-      "display_name": "Order CLI",
-      "description": "Track packages and delivery orders",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "packages",
+        "tokens",
+        "usage",
         "tracking",
-        "delivery",
-        "orders"
+        "costs"
       ],
-      "path": "integration/ordercli"
+      "path": "development/model-usage"
+    },
+    {
+      "name": "github",
+      "display_name": "GitHub",
+      "description": "Interact with GitHub repositories, PRs, and workflows",
+      "category": "development",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "github",
+        "git",
+        "repositories",
+        "pull-requests"
+      ],
+      "path": "development/github"
+    },
+    {
+      "name": "mcporter",
+      "display_name": "MCP Porter",
+      "description": "Port and convert MCP servers",
+      "category": "development",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "mcp",
+        "porting",
+        "conversion",
+        "servers"
+      ],
+      "path": "development/mcporter"
+    },
+    {
+      "name": "tmux",
+      "display_name": "Tmux",
+      "description": "Manage tmux sessions, windows, and panes",
+      "category": "development",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "tmux",
+        "terminal",
+        "multiplexer",
+        "sessions"
+      ],
+      "path": "development/tmux"
+    },
+    {
+      "name": "gh-issues",
+      "display_name": "GitHub Issues",
+      "description": "Manage GitHub issues \u2014 create, list, comment, close",
+      "category": "development",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "github",
+        "issues",
+        "bug-tracking",
+        "project-management"
+      ],
+      "path": "development/gh-issues"
+    },
+    {
+      "name": "session-logs",
+      "display_name": "Session Logs",
+      "description": "View and manage AI session logs",
+      "category": "development",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "logs",
+        "sessions",
+        "debugging",
+        "history"
+      ],
+      "path": "development/session-logs"
+    },
+    {
+      "name": "blucli",
+      "display_name": "Bluetooth CLI",
+      "description": "Control Bluetooth devices from the command line",
+      "category": "integration",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "bluetooth",
+        "cli",
+        "devices",
+        "macos"
+      ],
+      "path": "integration/blucli"
     },
     {
       "name": "blogwatcher",
@@ -377,7 +392,7 @@
       "description": "Monitor blogs and RSS feeds for new content",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "blogs",
         "rss",
@@ -392,7 +407,7 @@
       "description": "Control Philips Hue smart lights",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "hue",
         "smart-lights",
@@ -402,79 +417,19 @@
       "path": "integration/openhue"
     },
     {
-      "name": "goplaces",
-      "display_name": "Go Places",
-      "description": "Search and navigate places using maps",
+      "name": "sag",
+      "display_name": "SAG",
+      "description": "Search and grep across multiple sources",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "maps",
-        "places",
-        "navigation",
-        "search"
+        "search",
+        "grep",
+        "multi-source",
+        "aggregation"
       ],
-      "path": "integration/goplaces"
-    },
-    {
-      "name": "eightctl",
-      "display_name": "Eight Sleep Control",
-      "description": "Control Eight Sleep smart mattress",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "eight-sleep",
-        "smart-home",
-        "sleep",
-        "iot"
-      ],
-      "path": "integration/eightctl"
-    },
-    {
-      "name": "oracle",
-      "display_name": "Oracle",
-      "description": "Query and interact with Oracle databases",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "oracle",
-        "database",
-        "sql",
-        "queries"
-      ],
-      "path": "integration/oracle"
-    },
-    {
-      "name": "blucli",
-      "display_name": "Bluetooth CLI",
-      "description": "Control Bluetooth devices from the command line",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "bluetooth",
-        "cli",
-        "devices",
-        "macos"
-      ],
-      "path": "integration/blucli"
-    },
-    {
-      "name": "1password",
-      "display_name": "1Password",
-      "description": "Access 1Password vault items and secrets",
-      "category": "integration",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "1password",
-        "secrets",
-        "vault",
-        "security"
-      ],
-      "path": "integration/1password"
+      "path": "integration/sag"
     },
     {
       "name": "healthcheck",
@@ -482,7 +437,7 @@
       "description": "Monitor service health and uptime",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "monitoring",
         "health",
@@ -492,12 +447,57 @@
       "path": "integration/healthcheck"
     },
     {
+      "name": "xurl",
+      "display_name": "XURL",
+      "description": "Extract and manage URLs from text",
+      "category": "integration",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "urls",
+        "extraction",
+        "text",
+        "links"
+      ],
+      "path": "integration/xurl"
+    },
+    {
+      "name": "oracle",
+      "display_name": "Oracle",
+      "description": "Query and interact with Oracle databases",
+      "category": "integration",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "oracle",
+        "database",
+        "sql",
+        "queries"
+      ],
+      "path": "integration/oracle"
+    },
+    {
+      "name": "gog",
+      "display_name": "GOG",
+      "description": "Search and browse GOG.com game library",
+      "category": "integration",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "gog",
+        "gaming",
+        "library",
+        "drm-free"
+      ],
+      "path": "integration/gog"
+    },
+    {
       "name": "wacli",
       "display_name": "WhatsApp CLI",
       "description": "WhatsApp messaging from the command line",
       "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "whatsapp",
         "messaging",
@@ -507,79 +507,94 @@
       "path": "integration/wacli"
     },
     {
-      "name": "nano-pdf",
-      "display_name": "Nano PDF",
-      "description": "Process and analyze PDF documents with AI",
-      "category": "ai",
+      "name": "eightctl",
+      "display_name": "Eight Sleep Control",
+      "description": "Control Eight Sleep smart mattress",
+      "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "pdf",
-        "analysis",
-        "documents",
-        "ai"
+        "eight-sleep",
+        "smart-home",
+        "sleep",
+        "iot"
       ],
-      "path": "ai/nano-pdf"
+      "path": "integration/eightctl"
     },
     {
-      "name": "nano-banana-pro",
-      "display_name": "Nano Banana Pro",
-      "description": "Run local AI inference on Banana Pro hardware",
-      "category": "ai",
+      "name": "goplaces",
+      "display_name": "Go Places",
+      "description": "Search and navigate places using maps",
+      "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "local-ai",
-        "inference",
-        "edge",
-        "hardware"
+        "maps",
+        "places",
+        "navigation",
+        "search"
       ],
-      "path": "ai/nano-banana-pro"
+      "path": "integration/goplaces"
     },
     {
-      "name": "gemini",
-      "display_name": "Gemini",
-      "description": "Interact with Google Gemini AI models",
-      "category": "ai",
+      "name": "1password",
+      "display_name": "1Password",
+      "description": "Access 1Password vault items and secrets",
+      "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "gemini",
-        "google",
-        "ai",
-        "llm"
+        "1password",
+        "secrets",
+        "vault",
+        "security"
       ],
-      "path": "ai/gemini"
+      "path": "integration/1password"
     },
     {
-      "name": "openai-image-gen",
-      "display_name": "OpenAI Image Gen",
-      "description": "Generate images using OpenAI DALL-E API",
-      "category": "media",
+      "name": "clawhub",
+      "display_name": "ClawHub",
+      "description": "Browse and install OpenClaw skills from the hub",
+      "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "openai",
-        "dalle",
-        "image-generation",
-        "ai"
+        "openclaw",
+        "hub",
+        "skills",
+        "marketplace"
       ],
-      "path": "media/openai-image-gen"
+      "path": "integration/clawhub"
     },
     {
-      "name": "gifgrep",
-      "display_name": "GIF Grep",
-      "description": "Search and find GIFs",
-      "category": "media",
+      "name": "ordercli",
+      "display_name": "Order CLI",
+      "description": "Track packages and delivery orders",
+      "category": "integration",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "gif",
-        "search",
-        "images",
-        "animation"
+        "packages",
+        "tracking",
+        "delivery",
+        "orders"
       ],
-      "path": "media/gifgrep"
+      "path": "integration/ordercli"
+    },
+    {
+      "name": "weather",
+      "display_name": "Weather",
+      "description": "Get weather forecasts and current conditions",
+      "category": "integration",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "weather",
+        "forecast",
+        "conditions",
+        "climate"
+      ],
+      "path": "integration/weather"
     },
     {
       "name": "camsnap",
@@ -587,7 +602,7 @@
       "description": "Capture photos and screenshots from camera",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "camera",
         "photos",
@@ -597,34 +612,19 @@
       "path": "media/camsnap"
     },
     {
-      "name": "sherpa-onnx-tts",
-      "display_name": "Sherpa ONNX TTS",
-      "description": "Text-to-speech using Sherpa ONNX models",
+      "name": "gifgrep",
+      "display_name": "GIF Grep",
+      "description": "Search and find GIFs",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "tts",
-        "text-to-speech",
-        "onnx",
-        "audio"
+        "gif",
+        "search",
+        "images",
+        "animation"
       ],
-      "path": "media/sherpa-onnx-tts"
-    },
-    {
-      "name": "songsee",
-      "display_name": "SongSee",
-      "description": "Identify songs playing nearby using audio recognition",
-      "category": "media",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "music",
-        "recognition",
-        "shazam",
-        "audio"
-      ],
-      "path": "media/songsee"
+      "path": "media/gifgrep"
     },
     {
       "name": "video-frames",
@@ -632,7 +632,7 @@
       "description": "Extract frames from video files",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "video",
         "frames",
@@ -647,7 +647,7 @@
       "description": "Transcribe audio using OpenAI Whisper API",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "whisper",
         "transcription",
@@ -657,49 +657,19 @@
       "path": "media/openai-whisper-api"
     },
     {
-      "name": "spotify-player",
-      "display_name": "Spotify Player",
-      "description": "Control Spotify playback \u2014 play, pause, search, queue",
+      "name": "openai-image-gen",
+      "display_name": "OpenAI Image Gen",
+      "description": "Generate images using OpenAI DALL-E API",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "spotify",
-        "music",
-        "playback",
-        "streaming"
+        "openai",
+        "dalle",
+        "image-generation",
+        "ai"
       ],
-      "path": "media/spotify-player"
-    },
-    {
-      "name": "peekaboo",
-      "display_name": "Peekaboo",
-      "description": "Screen capture and screenshot utility",
-      "category": "media",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "screenshot",
-        "screen-capture",
-        "macos",
-        "utility"
-      ],
-      "path": "media/peekaboo"
-    },
-    {
-      "name": "sonoscli",
-      "display_name": "Sonos CLI",
-      "description": "Control Sonos speakers \u2014 play, pause, volume",
-      "category": "media",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "sonos",
-        "speakers",
-        "audio",
-        "smart-home"
-      ],
-      "path": "media/sonoscli"
+      "path": "media/openai-image-gen"
     },
     {
       "name": "openai-whisper",
@@ -707,7 +677,7 @@
       "description": "Transcribe audio using local OpenAI Whisper model",
       "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
         "whisper",
         "transcription",
@@ -717,94 +687,124 @@
       "path": "media/openai-whisper"
     },
     {
-      "name": "himalaya",
-      "display_name": "Himalaya",
-      "description": "CLI email client \u2014 read, send, and manage emails",
-      "category": "communication",
+      "name": "spotify-player",
+      "display_name": "Spotify Player",
+      "description": "Control Spotify playback \u2014 play, pause, search, queue",
+      "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "email",
-        "cli",
-        "imap",
-        "smtp"
+        "spotify",
+        "music",
+        "playback",
+        "streaming"
       ],
-      "path": "communication/himalaya"
+      "path": "media/spotify-player"
     },
     {
-      "name": "discord",
-      "display_name": "Discord",
-      "description": "Send and manage Discord messages and channels",
-      "category": "communication",
+      "name": "sonoscli",
+      "display_name": "Sonos CLI",
+      "description": "Control Sonos speakers \u2014 play, pause, volume",
+      "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "discord",
-        "messaging",
-        "chat",
-        "communities"
+        "sonos",
+        "speakers",
+        "audio",
+        "smart-home"
       ],
-      "path": "communication/discord"
+      "path": "media/sonoscli"
     },
     {
-      "name": "imsg",
-      "display_name": "iMessage",
-      "description": "Send and read iMessages on macOS",
-      "category": "communication",
+      "name": "peekaboo",
+      "display_name": "Peekaboo",
+      "description": "Screen capture and screenshot utility",
+      "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "imessage",
-        "messaging",
+        "screenshot",
+        "screen-capture",
         "macos",
-        "sms"
+        "utility"
       ],
-      "path": "communication/imsg"
+      "path": "media/peekaboo"
     },
     {
-      "name": "slack",
-      "display_name": "Slack",
-      "description": "Send and manage Slack messages, channels, and threads",
-      "category": "communication",
+      "name": "sherpa-onnx-tts",
+      "display_name": "Sherpa ONNX TTS",
+      "description": "Text-to-speech using Sherpa ONNX models",
+      "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "slack",
-        "messaging",
-        "workplace",
-        "chat"
-      ],
-      "path": "communication/slack"
-    },
-    {
-      "name": "voice-call",
-      "display_name": "Voice Call",
-      "description": "Make voice calls and manage call sessions",
-      "category": "communication",
-      "author_github": "openclaw",
-      "stars": 385725,
-      "tags": [
-        "voice",
-        "calls",
-        "telephony",
+        "tts",
+        "text-to-speech",
+        "onnx",
         "audio"
       ],
-      "path": "communication/voice-call"
+      "path": "media/sherpa-onnx-tts"
     },
     {
-      "name": "bluebubbles",
-      "display_name": "BlueBubbles",
-      "description": "Send and receive iMessages via BlueBubbles server",
-      "category": "communication",
+      "name": "songsee",
+      "display_name": "SongSee",
+      "description": "Identify songs playing nearby using audio recognition",
+      "category": "media",
       "author_github": "openclaw",
-      "stars": 385725,
+      "stars": 386505,
       "tags": [
-        "imessage",
-        "bluebubbles",
-        "messaging",
-        "macos"
+        "music",
+        "recognition",
+        "shazam",
+        "audio"
       ],
-      "path": "communication/bluebubbles"
+      "path": "media/songsee"
+    },
+    {
+      "name": "gemini",
+      "display_name": "Gemini",
+      "description": "Interact with Google Gemini AI models",
+      "category": "ai",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "gemini",
+        "google",
+        "ai",
+        "llm"
+      ],
+      "path": "ai/gemini"
+    },
+    {
+      "name": "nano-pdf",
+      "display_name": "Nano PDF",
+      "description": "Process and analyze PDF documents with AI",
+      "category": "ai",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "pdf",
+        "analysis",
+        "documents",
+        "ai"
+      ],
+      "path": "ai/nano-pdf"
+    },
+    {
+      "name": "nano-banana-pro",
+      "display_name": "Nano Banana Pro",
+      "description": "Run local AI inference on Banana Pro hardware",
+      "category": "ai",
+      "author_github": "openclaw",
+      "stars": 386505,
+      "tags": [
+        "local-ai",
+        "inference",
+        "edge",
+        "hardware"
+      ],
+      "path": "ai/nano-banana-pro"
     },
     {
       "name": "humanizer",
@@ -812,7 +812,7 @@
       "description": "Remove signs of AI-generated writing from text, making it sound natural and human-written",
       "category": "ai",
       "author_github": "blader",
-      "stars": 34573,
+      "stars": 36016,
       "tags": [
         "writing",
         "editing",
@@ -838,22 +838,6 @@
       "path": "development/git-commit-reviewer"
     },
     {
-      "name": "api-endpoint-scaffolder",
-      "display_name": "API Endpoint Scaffolder",
-      "description": "Scaffolds REST API endpoints with route handler, validation, error handling, and tests. Detects framework automatically.",
-      "category": "development",
-      "author_github": "anthropics",
-      "stars": 1,
-      "tags": [
-        "api",
-        "rest",
-        "scaffolding",
-        "express",
-        "nextjs"
-      ],
-      "path": "development/api-endpoint-scaffolder"
-    },
-    {
       "name": "react-component-generator",
       "display_name": "React Component Generator",
       "description": "Generates production-ready React components with TypeScript, Tailwind CSS, accessibility, and test scaffolding",
@@ -868,6 +852,22 @@
         "testing"
       ],
       "path": "development/react-component-generator"
+    },
+    {
+      "name": "api-endpoint-scaffolder",
+      "display_name": "API Endpoint Scaffolder",
+      "description": "Scaffolds REST API endpoints with route handler, validation, error handling, and tests. Detects framework automatically.",
+      "category": "development",
+      "author_github": "anthropics",
+      "stars": 1,
+      "tags": [
+        "api",
+        "rest",
+        "scaffolding",
+        "express",
+        "nextjs"
+      ],
+      "path": "development/api-endpoint-scaffolder"
     },
     {
       "name": "threat-model",
@@ -886,22 +886,6 @@
       "path": "security/threat-model"
     },
     {
-      "name": "secure-code-review",
-      "display_name": "Secure Code Review",
-      "description": "Security-focused code review that checks for injection, auth flaws, crypto misuse, data exposure, and insecure patterns across any language",
-      "category": "security",
-      "author_github": "",
-      "stars": 1,
-      "tags": [
-        "security",
-        "code-review",
-        "vulnerabilities",
-        "owasp",
-        "static-analysis"
-      ],
-      "path": "security/secure-code-review"
-    },
-    {
       "name": "security-audit",
       "display_name": "Security Audit",
       "description": "Comprehensive security audit of a codebase covering OWASP Top 10, secrets exposure, dependency vulnerabilities, and configuration issues",
@@ -916,6 +900,22 @@
         "code-review"
       ],
       "path": "security/security-audit"
+    },
+    {
+      "name": "secure-code-review",
+      "display_name": "Secure Code Review",
+      "description": "Security-focused code review that checks for injection, auth flaws, crypto misuse, data exposure, and insecure patterns across any language",
+      "category": "security",
+      "author_github": "",
+      "stars": 1,
+      "tags": [
+        "security",
+        "code-review",
+        "vulnerabilities",
+        "owasp",
+        "static-analysis"
+      ],
+      "path": "security/secure-code-review"
     }
   ]
 }
