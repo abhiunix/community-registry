@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T12:08:35.182720+00:00",
+  "updated_at": "2026-09-07T11:02:06.138344+00:00",
   "categories": [
     "git",
     "linting",
@@ -8,19 +8,19 @@
   "total": 3,
   "entries": [
     {
-      "name": "auto-test-runner",
-      "display_name": "Auto Test Runner",
-      "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
-      "category": "testing",
+      "name": "pre-commit-check",
+      "display_name": "Pre-Commit Type Check",
+      "description": "Runs TypeScript type checking before each commit to catch type errors early",
+      "category": "git",
       "author_github": "",
       "stars": 1,
       "tags": [
-        "testing",
-        "automation",
-        "ci",
-        "development"
+        "git",
+        "typescript",
+        "type-checking",
+        "pre-commit"
       ],
-      "path": "testing/auto-test-runner.json"
+      "path": "git/pre-commit-check.json"
     },
     {
       "name": "lint-on-save",
@@ -38,19 +38,19 @@
       "path": "linting/lint-on-save.json"
     },
     {
-      "name": "pre-commit-check",
-      "display_name": "Pre-Commit Type Check",
-      "description": "Runs TypeScript type checking before each commit to catch type errors early",
-      "category": "git",
+      "name": "auto-test-runner",
+      "display_name": "Auto Test Runner",
+      "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
+      "category": "testing",
       "author_github": "",
       "stars": 1,
       "tags": [
-        "git",
-        "typescript",
-        "type-checking",
-        "pre-commit"
+        "testing",
+        "automation",
+        "ci",
+        "development"
       ],
-      "path": "git/pre-commit-check.json"
+      "path": "testing/auto-test-runner.json"
     }
   ]
 }
