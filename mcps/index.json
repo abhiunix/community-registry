@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T11:02:06.137059+00:00",
+  "updated_at": "2026-09-14T11:14:08.591234+00:00",
   "categories": [
     "devtools"
   ],
@@ -11,7 +11,7 @@
       "description": "Provides GitHub repository access, issues, PRs, and code search capabilities through the Model Context Protocol",
       "category": "devtools",
       "author_github": "modelcontextprotocol",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "github",
         "vcs",
@@ -26,7 +26,7 @@
       "description": "Provides PostgreSQL database access for queries, schema inspection, and data operations",
       "category": "devtools",
       "author_github": "modelcontextprotocol",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "database",
         "postgres",

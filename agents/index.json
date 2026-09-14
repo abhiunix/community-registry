@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T11:02:06.139666+00:00",
+  "updated_at": "2026-09-14T11:14:08.594291+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -14,7 +14,7 @@
       "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10, identifies attack surfaces, and provides actionable remediation guidance with severity ratings",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "audit",
@@ -30,7 +30,7 @@
       "description": "Analyzes system architecture to identify threats using STRIDE methodology, maps attack surfaces, and produces threat models with risk ratings and mitigations",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "threat-modeling",
@@ -46,7 +46,7 @@
       "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "dependencies",

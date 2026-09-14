@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T11:02:06.139960+00:00",
+  "updated_at": "2026-09-14T11:14:08.594569+00:00",
   "categories": [
     "security"
   ],
@@ -11,7 +11,7 @@
       "description": "Complete secure development preset bundling OWASP-aligned security rules, security-focused agents, and audit/review skills for building secure applications in any language",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "owasp",

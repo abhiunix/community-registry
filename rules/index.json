@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T11:02:06.137907+00:00",
+  "updated_at": "2026-09-14T11:14:08.592267+00:00",
   "categories": [
     "code-quality",
     "performance",
@@ -14,7 +14,7 @@
       "description": "Enforce consistent naming conventions across the codebase for variables, functions, classes, and files",
       "category": "style",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "style",
         "naming",
@@ -29,7 +29,7 @@
       "description": "A lightweight checklist for consistent code reviews: readability, tests, and security",
       "category": "code-quality",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "code-review",
         "quality",
@@ -43,7 +43,7 @@
       "description": "Enforce secure authentication patterns: password hashing, session management, MFA support, and token handling",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "authentication",
@@ -59,7 +59,7 @@
       "description": "Prevent SQL injection by enforcing parameterized queries and banning string concatenation in database operations",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "sql-injection",
@@ -74,7 +74,7 @@
       "description": "Use cryptography correctly: strong algorithms, proper key management, and secure random number generation",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "cryptography",
@@ -90,7 +90,7 @@
       "description": "Manage third-party dependencies securely: pin versions, audit for vulnerabilities, and minimize attack surface",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "dependencies",
@@ -106,7 +106,7 @@
       "description": "Enforce proper authorization checks, role-based access control, and principle of least privilege across all endpoints",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "authorization",
@@ -122,7 +122,7 @@
       "description": "Handle errors securely without leaking stack traces, internal paths, database details, or system information to users",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "error-handling",
@@ -138,7 +138,7 @@
       "description": "Always validate and sanitize user input at system boundaries to prevent injection attacks",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "validation",
@@ -154,7 +154,7 @@
       "description": "Prevent OS command injection and code injection by avoiding shell execution with user input",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "command-injection",
@@ -170,7 +170,7 @@
       "description": "Prevent cross-site scripting by enforcing output encoding, CSP headers, and safe DOM manipulation",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "xss",
@@ -185,7 +185,7 @@
       "description": "Handle file uploads, downloads, and path operations securely to prevent path traversal, arbitrary file access, and malicious uploads",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "file-upload",
@@ -200,7 +200,7 @@
       "description": "Design APIs securely with rate limiting, proper CORS, request validation, and protection against common API attacks",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "api",
@@ -216,7 +216,7 @@
       "description": "Log security events properly without leaking sensitive data like passwords, tokens, PII, or credit card numbers",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "logging",
@@ -232,7 +232,7 @@
       "description": "Prevent hardcoded secrets, API keys, tokens, and passwords from being committed to the codebase",
       "category": "security",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "security",
         "secrets",
@@ -247,7 +247,7 @@
       "description": "Detect and prevent N+1 query patterns in database access code",
       "category": "performance",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "performance",
         "database",

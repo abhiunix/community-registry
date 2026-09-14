@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T11:02:06.140094+00:00",
+  "updated_at": "2026-09-14T11:14:08.594677+00:00",
   "skills": {
     "total": 60,
     "categories": [
@@ -11,14 +11,14 @@
       "productivity",
       "security"
     ],
-    "top_stars": 389085
+    "top_stars": 389652
   },
   "mcps": {
     "total": 2,
     "categories": [
       "devtools"
     ],
-    "top_stars": 1
+    "top_stars": 2
   },
   "rules": {
     "total": 16,
@@ -28,7 +28,7 @@
       "security",
       "style"
     ],
-    "top_stars": 1
+    "top_stars": 2
   },
   "hooks": {
     "total": 3,
@@ -37,7 +37,7 @@
       "linting",
       "testing"
     ],
-    "top_stars": 1
+    "top_stars": 2
   },
   "agents": {
     "total": 6,
@@ -47,13 +47,13 @@
       "development",
       "security"
     ],
-    "top_stars": 1
+    "top_stars": 2
   },
   "presets": {
     "total": 1,
     "categories": [
       "security"
     ],
-    "top_stars": 1
+    "top_stars": 2
   }
 }

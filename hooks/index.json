@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T11:02:06.138344+00:00",
+  "updated_at": "2026-09-14T11:14:08.592750+00:00",
   "categories": [
     "git",
     "linting",
@@ -13,7 +13,7 @@
       "description": "Runs TypeScript type checking before each commit to catch type errors early",
       "category": "git",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "git",
         "typescript",
@@ -28,7 +28,7 @@
       "description": "Automatically runs ESLint on saved files to catch issues immediately",
       "category": "linting",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "linting",
         "eslint",
@@ -43,7 +43,7 @@
       "description": "Automatically runs relevant tests when files are modified, with intelligent test detection",
       "category": "testing",
       "author_github": "",
-      "stars": 1,
+      "stars": 2,
       "tags": [
         "testing",
         "automation",
