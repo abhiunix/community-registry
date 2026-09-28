@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T11:26:05.751218+00:00",
+  "updated_at": "2026-09-28T12:21:49.174659+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -9,20 +9,20 @@
   "total": 6,
   "entries": [
     {
-      "name": "security-auditor",
-      "display_name": "Security Auditor",
-      "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10, identifies attack surfaces, and provides actionable remediation guidance with severity ratings",
+      "name": "dependency-scanner",
+      "display_name": "Dependency Scanner",
+      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
       "category": "security",
       "author_github": "",
       "stars": 2,
       "tags": [
         "security",
-        "audit",
-        "owasp",
+        "dependencies",
         "vulnerabilities",
-        "pentest"
+        "supply-chain",
+        "scanning"
       ],
-      "path": "security/security-auditor.json"
+      "path": "security/dependency-scanner.json"
     },
     {
       "name": "threat-modeler",
@@ -41,20 +41,35 @@
       "path": "security/threat-modeler.json"
     },
     {
-      "name": "dependency-scanner",
-      "display_name": "Dependency Scanner",
-      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
+      "name": "security-auditor",
+      "display_name": "Security Auditor",
+      "description": "Security expert that audits codebases for vulnerabilities across OWASP Top 10, identifies attack surfaces, and provides actionable remediation guidance with severity ratings",
       "category": "security",
       "author_github": "",
       "stars": 2,
       "tags": [
         "security",
-        "dependencies",
+        "audit",
+        "owasp",
         "vulnerabilities",
-        "supply-chain",
-        "scanning"
+        "pentest"
       ],
-      "path": "security/dependency-scanner.json"
+      "path": "security/security-auditor.json"
+    },
+    {
+      "name": "code-reviewer",
+      "display_name": "Code Reviewer",
+      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
+      "category": "code-review",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "code-review",
+        "quality",
+        "security",
+        "best-practices"
+      ],
+      "path": "code-review/code-reviewer.json"
     },
     {
       "name": "fullstack-developer",
@@ -71,21 +86,6 @@
         "api"
       ],
       "path": "development/fullstack-developer.json"
-    },
-    {
-      "name": "code-reviewer",
-      "display_name": "Code Reviewer",
-      "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
-      "category": "code-review",
-      "author_github": "",
-      "stars": 0,
-      "tags": [
-        "code-review",
-        "quality",
-        "security",
-        "best-practices"
-      ],
-      "path": "code-review/code-reviewer.json"
     },
     {
       "name": "api-designer",
