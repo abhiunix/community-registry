@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T11:33:20.761050+00:00",
+  "updated_at": "2026-10-26T11:51:53.706037+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -8,22 +8,6 @@
   ],
   "total": 6,
   "entries": [
-    {
-      "name": "dependency-scanner",
-      "display_name": "Dependency Scanner",
-      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
-      "category": "security",
-      "author_github": "",
-      "stars": 2,
-      "tags": [
-        "security",
-        "dependencies",
-        "vulnerabilities",
-        "supply-chain",
-        "scanning"
-      ],
-      "path": "security/dependency-scanner.json"
-    },
     {
       "name": "threat-modeler",
       "display_name": "Threat Modeler",
@@ -57,6 +41,38 @@
       "path": "security/security-auditor.json"
     },
     {
+      "name": "dependency-scanner",
+      "display_name": "Dependency Scanner",
+      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
+      "category": "security",
+      "author_github": "",
+      "stars": 2,
+      "tags": [
+        "security",
+        "dependencies",
+        "vulnerabilities",
+        "supply-chain",
+        "scanning"
+      ],
+      "path": "security/dependency-scanner.json"
+    },
+    {
+      "name": "api-designer",
+      "display_name": "API Designer",
+      "description": "Expert API architect designing RESTful and GraphQL APIs following industry best practices and standards",
+      "category": "architecture",
+      "author_github": "",
+      "stars": 0,
+      "tags": [
+        "api",
+        "rest",
+        "graphql",
+        "design",
+        "architecture"
+      ],
+      "path": "architecture/api-designer.json"
+    },
+    {
       "name": "code-reviewer",
       "display_name": "Code Reviewer",
       "description": "A meticulous code reviewer that analyzes code for quality, security, performance, and maintainability",
@@ -86,22 +102,6 @@
         "api"
       ],
       "path": "development/fullstack-developer.json"
-    },
-    {
-      "name": "api-designer",
-      "display_name": "API Designer",
-      "description": "Expert API architect designing RESTful and GraphQL APIs following industry best practices and standards",
-      "category": "architecture",
-      "author_github": "",
-      "stars": 0,
-      "tags": [
-        "api",
-        "rest",
-        "graphql",
-        "design",
-        "architecture"
-      ],
-      "path": "architecture/api-designer.json"
     }
   ]
 }
