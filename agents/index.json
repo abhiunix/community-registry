@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T11:51:53.706037+00:00",
+  "updated_at": "2026-11-02T14:11:33.088747+00:00",
   "categories": [
     "architecture",
     "code-review",
@@ -8,6 +8,22 @@
   ],
   "total": 6,
   "entries": [
+    {
+      "name": "dependency-scanner",
+      "display_name": "Dependency Scanner",
+      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
+      "category": "security",
+      "author_github": "",
+      "stars": 2,
+      "tags": [
+        "security",
+        "dependencies",
+        "vulnerabilities",
+        "supply-chain",
+        "scanning"
+      ],
+      "path": "security/dependency-scanner.json"
+    },
     {
       "name": "threat-modeler",
       "display_name": "Threat Modeler",
@@ -39,22 +55,6 @@
         "pentest"
       ],
       "path": "security/security-auditor.json"
-    },
-    {
-      "name": "dependency-scanner",
-      "display_name": "Dependency Scanner",
-      "description": "Scans project dependencies for known vulnerabilities, outdated packages, license issues, and supply chain risks across all major package managers",
-      "category": "security",
-      "author_github": "",
-      "stars": 2,
-      "tags": [
-        "security",
-        "dependencies",
-        "vulnerabilities",
-        "supply-chain",
-        "scanning"
-      ],
-      "path": "security/dependency-scanner.json"
     },
     {
       "name": "api-designer",
